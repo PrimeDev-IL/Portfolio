@@ -4,6 +4,8 @@ import { BrowserRouter as Router } from 'react-router-dom'
 
 import { RootCmp } from "./RootCmp"
 
+import './assets/styles/main.css'
+
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
     <Router>
