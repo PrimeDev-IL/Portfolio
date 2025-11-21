@@ -2,4 +2,11 @@
     /* App Header */
     --app-header-bgc-clr: #1e1e2f;
     --app-header-txt-clr: #e6e6e6;
+
+    /* Hero */
+    --hero-bgc-gradient-start: #2d1b69;
+    --hero-bgc-gradient-mid: #1e3a8a;
+    --hero-bgc-gradient-end: #3730a3;
+    --hero-txt-clr: #ffffff;
+    --hero-cta-btn-bgc: #6366f1;
 }

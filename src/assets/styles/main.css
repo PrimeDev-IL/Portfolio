@@ -9,5 +9,7 @@
 @import 'basics/layout.css';
 
 /* Cmps */
+@import 'cmps/Hero.css';
+
 /* ApplicationCmps */
 @import 'cmps/ApplicationCmps/appHeader.css';
