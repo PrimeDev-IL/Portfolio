@@ -3,6 +3,7 @@ import { Hero } from "./cmps/hero";
 import { OurTeam } from "./cmps/OurTeam";
 import { Portfolio } from "./cmps/Portfolio";
 import { Services } from "./cmps/Services";
+import { Contact } from "./cmps/Contact";
 
 export function RootCmp() {
     return (
@@ -13,6 +14,7 @@ export function RootCmp() {
                 <Services />
                 <Portfolio />
                 <OurTeam />
+                <Contact />
             </main>
         </div>
     )

@@ -46,4 +46,19 @@
     --team-link-clr: #cbd5e1;
     --team-link-hover-clr: #a78bfa;
     --team-separator-clr: #475569;
+
+    /* Contact */
+    --contact-method-bgc: rgba(30, 30, 47, 0.6);
+    --contact-method-border-clr: #334155;
+    --contact-method-border-hover-clr: #6366f1;
+    --contact-icon-bgc: #4f46e5;
+    --contact-link-clr: #a78bfa;
+    --contact-link-hover-clr: #6366f1;
+    --contact-label-clr: #e5e7eb;
+    --contact-input-bgc: rgba(30, 30, 47, 0.8);
+    --contact-input-border-clr: #334155;
+    --contact-input-focus-border-clr: #6366f1;
+    --contact-placeholder-clr: #6b7280;
+    --contact-btn-bgc: #6366f1;
+    --contact-btn-hover-bgc: #4f46e5;
 }

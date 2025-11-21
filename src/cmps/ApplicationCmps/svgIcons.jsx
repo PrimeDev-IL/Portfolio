@@ -192,3 +192,15 @@ export const servicesIcons = {
         />
     </svg>)
 }
+
+export const ContactIcons = {
+    mail: (<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 8L10.89 13.26C11.53 13.67 12.47 13.67 13.11 13.26L21 8M5 19H19C20.1 19 21 18.1 21 17V7C21 5.9 20.1 5 19 5H5C3.9 5 3 5.9 3 7V17C3 18.1 3.9 19 5 19Z"
+            stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>),
+    linkedIn: (<svg width="20" height="20" viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg" fill="white">
+        <path d="M5.2 8C4.3 8 3.6 7.3 3.6 6.4C3.6 5.5 4.3 4.8 5.2 4.8C6.1 4.8 6.8 5.5 6.8 6.4C6.8 7.3 6.1 8 5.2 8ZM4 9.5H6.4V18H4V9.5Z" />
+        <path d="M9.3 9.5H11.7V10.6H11.8C12.2 9.8 13 9.2 14.3 9.2C17 9.2 17.5 11 17.5 13.3V18H15.1V14C15.1 13 15.1 11.6 13.7 11.6C12.2 11.6 12 12.7 12 13.8V18H9.3V9.5Z" />
+    </svg>)
+}
