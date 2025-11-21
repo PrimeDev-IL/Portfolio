@@ -11,6 +11,7 @@
 /* Cmps */
 @import 'cmps/Hero.css';
 @import 'cmps/Services.css';
+@import 'cmps/Portfolio.css';
 
 /* ApplicationCmps */
 @import 'cmps/ApplicationCmps/appHeader.css';

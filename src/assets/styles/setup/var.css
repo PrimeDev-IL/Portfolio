@@ -21,4 +21,15 @@
     --services-category-bgc: #4f46e5;
     --services-category-text-clr: #e5e7eb;
     --services-btn-text-clr: #6366f1;
+
+    /* Portfolio */
+    --portfolio-card-bgc: #1e1e2f;
+    --portfolio-card-border-clr: #4f46e5;
+    --portfolio-card-border-hover-clr: #6366f1;
+    --portfolio-card-text-clr: #9ca3af;
+    --portfolio-visual-bgc: #2a2a3e;
+    --portfolio-line-bgc: #6366f1;
+    --portfolio-line-highlight-bgc: #fbbf24;
+    --portfolio-tag-bgc: #4f46e5;
+    --portfolio-tag-text-clr: #e5e7eb;
 }
