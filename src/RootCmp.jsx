@@ -1,4 +1,5 @@
 import { AppHeader } from "./cmps/ApplicationCmps/AppHeader";
+import { AppFooter } from "./cmps/ApplicationCmps/AppFooter";
 import { Hero } from "./cmps/hero";
 import { OurTeam } from "./cmps/OurTeam";
 import { Portfolio } from "./cmps/Portfolio";
@@ -16,6 +17,7 @@ export function RootCmp() {
                 <OurTeam />
                 <Contact />
             </main>
+            <AppFooter />
         </div>
     )
 }

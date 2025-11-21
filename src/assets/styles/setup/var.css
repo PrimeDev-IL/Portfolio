@@ -61,4 +61,9 @@
     --contact-placeholder-clr: #6b7280;
     --contact-btn-bgc: #6366f1;
     --contact-btn-hover-bgc: #4f46e5;
+
+    /* Footer */
+    --footer-bgc: #1a1a2e;
+    --footer-border-clr: #334155;
+    --footer-text-clr: #9ca3af;
 }

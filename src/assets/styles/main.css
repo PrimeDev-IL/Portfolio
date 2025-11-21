@@ -1,6 +1,5 @@
 /* SETUP */
 @import 'setup/var.css';
-@import 'setup/typography.css';
 
 /* Basics */
 @import 'basics/base.css';
@@ -17,3 +16,4 @@
 
 /* ApplicationCmps */
 @import 'cmps/ApplicationCmps/appHeader.css';
+@import 'cmps/ApplicationCmps/AppFooter.css';
