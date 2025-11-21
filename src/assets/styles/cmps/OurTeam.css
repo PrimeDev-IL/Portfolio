@@ -1,0 +1,131 @@
+.our-team-container {
+    color: white;
+    padding: 4rem 2rem;
+
+    >.title {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+        font-size: 42px;
+        margin: 0 0 0.5rem 0;
+        text-align: center;
+    }
+
+    >.subtitle {
+        color: var(--services-subtitle-clr);
+        font-size: 16px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin: 0 0 3rem 0;
+        text-align: center;
+    }
+
+    >.team-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        width: 100%;
+        max-width: 100%;
+
+        >.team-card {
+            background: var(--team-card-bgc);
+            border: 2px solid var(--team-card-border-clr);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+
+            &:hover {
+                transform: translateY(-5px);
+                border-color: var(--team-card-border-hover-clr);
+            }
+
+            >.avatar {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 1.5rem;
+
+                >.avatar-image {
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    border: 3px solid var(--team-avatar-bgc);
+                }
+
+                >.avatar-circle {
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+                    background: var(--team-avatar-bgc);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1.25rem;
+                    font-weight: 600;
+                    color: white;
+                }
+            }
+
+            >.member-name {
+                text-align: center;
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: white;
+                margin: 0 0 0.5rem 0;
+            }
+
+            >.member-role {
+                text-align: center;
+                font-size: 0.9rem;
+                color: var(--team-role-clr);
+                margin: 0 0 1.5rem 0;
+            }
+
+            >.member-bio {
+                text-align: center;
+                font-size: 0.9rem;
+                color: var(--team-bio-clr);
+                line-height: 1.6;
+                margin: 0 0 1.5rem 0;
+            }
+
+            >.member-tags {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0.5rem;
+                margin-bottom: 1.5rem;
+
+                >.tag {
+                    background: var(--team-tag-bgc);
+                    color: var(--team-tag-text-clr);
+                    border: 1px solid var(--team-tag-border-clr);
+                    padding: 0.4rem 0.8rem;
+                    border-radius: 20px;
+                    font-size: 0.75rem;
+                }
+            }
+
+            >.social-links {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                font-size: 0.85rem;
+
+                a {
+                    color: var(--team-link-clr);
+                    text-decoration: none;
+                    transition: color 0.3s ease;
+
+                    &:hover {
+                        color: var(--team-link-hover-clr);
+                    }
+                }
+
+                >.separator {
+                    color: var(--team-separator-clr);
+                }
+            }
+        }
+    }
+}
