@@ -1,7 +1,5 @@
 import { heroSectionIcons } from "./ApplicationCmps/svgIcons";
 
-import personImage from '../assets/img/person_clean.png'
-
 export function Hero() {
     return (
         <section className="hero-container full">
