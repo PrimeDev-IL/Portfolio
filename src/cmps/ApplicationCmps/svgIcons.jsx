@@ -56,7 +56,7 @@ export const appHeaderIcons = {
     )
 }
 
-export const heroSection = {
+export const heroSectionIcons = {
     heroIllustrator: (
         <svg viewBox="0 0 360 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
             <title id="title">Full Stack &amp; DevOps Illustration</title>
@@ -155,4 +155,40 @@ export const heroSection = {
         </svg>
 
     )
+}
+
+export const servicesIcons = {
+    soarIcon: (<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 3l7 3v5c0 5-3.5 9-7 10-3.5-1-7-5-7-10V6l7-3z"
+            stroke="white" stroke-width="1.6" fill="none" />
+        <path d="M13 8l-3 4h3l-2 4"
+            stroke="white" stroke-width="1.6" stroke-linecap="round"
+            stroke-linejoin="round" />
+    </svg>),
+    webDevIcon: (<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <rect x="3" y="4" width="18" height="16" rx="2" stroke="white" stroke-width="1.6" />
+        <line x1="3" y1="8" x2="21" y2="8" stroke="white" stroke-width="1.6" />
+        <path d="M10 12L7 15L10 18" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M14 12L17 15L14 18" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>),
+    devOpsIcon: (<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M7 8
+       C5 8 4 10 4 12
+       C4 14 5 16 7 16
+       C9 16 11 14 12 12
+       C13 10 15 8 17 8
+       C19 8 20 10 20 12
+       C20 14 19 16 17 16
+       C15 16 13 14 12 12
+       C11 10 9 8 7 8"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+        />
+    </svg>)
 }

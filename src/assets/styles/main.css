@@ -10,6 +10,7 @@
 
 /* Cmps */
 @import 'cmps/Hero.css';
+@import 'cmps/Services.css';
 
 /* ApplicationCmps */
 @import 'cmps/ApplicationCmps/appHeader.css';

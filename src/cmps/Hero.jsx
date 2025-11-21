@@ -1,4 +1,4 @@
-import { heroSection } from "./ApplicationCmps/svgIcons";
+import { heroSectionIcons } from "./ApplicationCmps/svgIcons";
 
 import personImage from '../assets/img/person_clean.png'
 
@@ -16,8 +16,7 @@ export function Hero() {
                     <button className="cta-button">Get in Touch</button>
                 </div>
                 <div className="hero-illustration">
-                    {heroSection.heroIllustrator}
-                    {/* <img src={personImage} alt="Developer working at desk" /> */}
+                    {heroSectionIcons.heroIllustrator}
                 </div>
             </div>
         </section>

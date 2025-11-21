@@ -12,7 +12,7 @@ body {
     margin: 0 auto;
     font-family: "Atlassian Sans", ui-sans-serif, -apple-system, "system-ui",
         "Segoe UI", Ubuntu, "Helvetica Neue", sans-serif;
-    color: #838c91;
+    background-color: var(--app-base-bgc-clr);
 }
 
 

@@ -1,6 +1,7 @@
 :root {
+    --app-base-bgc-clr: #1e1e2f;
+
     /* App Header */
-    --app-header-bgc-clr: #1e1e2f;
     --app-header-txt-clr: #e6e6e6;
 
     /* Hero */
@@ -9,4 +10,15 @@
     --hero-bgc-gradient-end: #3730a3;
     --hero-txt-clr: #ffffff;
     --hero-cta-btn-bgc: #6366f1;
+
+    /* Services */
+    --services-subtitle-clr: #bfbfd4;
+    --services-card-bgc: #1e1e2f;
+    --services-card-border-clr: #4f46e5;
+    --services-card-border-hover-clr: #6366f1;
+    --services-card-text-clr: #9ca3af;
+    --services-icon-bgc: #4f46e5;
+    --services-category-bgc: #4f46e5;
+    --services-category-text-clr: #e5e7eb;
+    --services-btn-text-clr: #6366f1;
 }

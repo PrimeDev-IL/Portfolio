@@ -1,5 +1,5 @@
 .app-header {
-    background-color: var(--app-header-bgc-clr);
+    background-color: var(--app-base-bgc-clr);
 }
 
 .header-container {
