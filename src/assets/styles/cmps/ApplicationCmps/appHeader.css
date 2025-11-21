@@ -1,0 +1,20 @@
+.app-header {
+    background-color: var(--app-header-bgc-clr);
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+
+    .logo {
+        margin-inline-start: 80px;
+        margin-top: 5px;
+    }
+
+    >.app-nav {
+        grid-column: -1;
+        gap: 15px;
+        margin-inline-end: 87px;
+        color: var(--app-header-txt-clr);
+    }
+}

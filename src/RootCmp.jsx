@@ -1,7 +1,10 @@
+import { AppHeader } from "./cmps/ApplicationCmps/AppHeader";
+
 export function RootCmp() {
     return (
         <div className="main-container">
-            <main>ד</main>
+            <AppHeader />
+            <main classname="full"></main>
         </div>
     )
 }

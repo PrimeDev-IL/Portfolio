@@ -1,1 +1,5 @@
-:root {}
+:root {
+    /* App Header */
+    --app-header-bgc-clr: #1e1e2f;
+    --app-header-txt-clr: #e6e6e6;
+}
