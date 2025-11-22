@@ -54,27 +54,26 @@
                 cursor: pointer;
                 width: fit-content;
                 transition: all 0.3s ease;
+
+                &:hover {
+                    background: var(--hero-cta-btn-bgc);
+                    opacity: 0.9;
+                    transform: translateY(-2px);
+                }
             }
         }
 
-    }
+        >.hero-illustration {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateX(26%);
 
-
-
-
-
-
-    .hero-illustration {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transform: translateX(26%);
-    }
-
-
-    .cta-button:hover {
-        background: var(--hero-cta-btn-bgc);
-        opacity: 0.9;
-        transform: translateY(-2px);
+            svg {
+                width: 100%;
+                max-width: 500px;
+                height: auto;
+            }
+        }
     }
 }

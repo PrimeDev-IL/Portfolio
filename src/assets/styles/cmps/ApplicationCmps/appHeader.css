@@ -1,5 +1,9 @@
 .app-header {
     background-color: var(--app-base-bgc-clr);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .header-container {
