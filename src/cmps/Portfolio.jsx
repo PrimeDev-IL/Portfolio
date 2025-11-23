@@ -1,3 +1,5 @@
+import taskRail_Thumbnail from '../assets/img/taskRail-thumbnail.png'
+
 export function Portfolio() {
     return (
         <section className="portfolio-container">
@@ -7,20 +9,22 @@ export function Portfolio() {
             <div className="portfolio-cards">
                 <div className="card">
                     <div className="card-visual">
-                        {/* Visual placeholder - can be replaced with actual chart/image */}
-                        <div className="placeholder-lines">
-                            <div className="line line-1"></div>
-                            <div className="line line-2"></div>
-                            <div className="line line-3"></div>
-                        </div>
+                        <img src={taskRail_Thumbnail} alt='taskRail-thumbnail' />
                     </div>
                     <div className="card-content">
-                        <h3 className="card-title">Project Title 1</h3>
-                        <p className="card-description">Brief project description goes here</p>
+                        <h3 className="card-title">TaskRail</h3>
+                        <p className="card-description">A collaborative task management platform built with React and Node.js. Features real-time board updates, drag-and-drop task organization, team collaboration, and cloud-synced data storage.</p>
                         <div className="tags">
-                            <span className="tag">CloudTrail</span>
-                            <span className="tag">SIEM</span>
-                            <span className="tag">Detection</span>
+                            <span className="tag">React</span>
+                            <span className="tag">Node.js</span>
+                            <span className="tag">MongoDB</span>
+                            <span className="tag">Redux</span>
+                        </div>
+                        <div className="card-actions">
+                            <a href="https://taskrail.onrender.com" target="_blank" rel="noopener noreferrer" className="demo-btn">
+                                Live Demo
+                            </a>
+                            <p className="demo-note">Hosted on free tier — initial load may take 30-60 seconds.</p>
                         </div>
                     </div>
                 </div>
@@ -38,12 +42,14 @@ export function Portfolio() {
                         </svg>
                     </div>
                     <div className="card-content">
-                        <h3 className="card-title">Project Title 2</h3>
-                        <p className="card-description">Brief project description goes here</p>
+                        <h3 className="card-title">PrimeNotes AI</h3>
+                        <p className="card-description">A smart note-taking app that uses AI to generate instant summaries and auto-tag notes for fast searching and better organization. Built with a full-stack architecture using React and Node.js.</p>
                         <div className="tags">
-                            <span className="tag">DevSecOps</span>
-                            <span className="tag">CI/CD</span>
-                            <span className="tag">Terraform</span>
+                            <span className="tag">React</span>
+                            <span className="tag">Node.JS</span>
+                            <span className="tag">MongoDB</span>
+                            <span className="tag">AI Integration</span>
+                            <span className="tag">Redux</span>
                         </div>
                     </div>
                 </div>
@@ -58,12 +64,14 @@ export function Portfolio() {
                         </div>
                     </div>
                     <div className="card-content">
-                        <h3 className="card-title">Project Title 3</h3>
-                        <p className="card-description">Brief project description goes here</p>
+                        <h3 className="card-title">Habit Sync</h3>
+                        <p className="card-description">A clean and motivating habit-tracking app featuring daily check-ins, streak calculation, and a visual progress calendar powered by a custom API backend.</p>
                         <div className="tags">
-                            <span className="tag">MERN</span>
-                            <span className="tag">Secure UI</span>
-                            <span className="tag">AWS Deploy</span>
+                            <span className="tag">React</span>
+                            <span className="tag">Node.JS</span>
+                            <span className="tag">MongoDB</span>
+                            <span className="tag">Redux</span>
+                            <span className="tag">REST API</span>
                         </div>
                     </div>
                 </div>

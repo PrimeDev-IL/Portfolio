@@ -32,6 +32,11 @@
     --portfolio-line-highlight-bgc: #fbbf24;
     --portfolio-tag-bgc: #4f46e5;
     --portfolio-tag-text-clr: #e5e7eb;
+    --portfolio-demo-btn-gradient-start: #667eea;
+    --portfolio-demo-btn-gradient-end: #764ba2;
+    --portfolio-demo-btn-text-clr: #ffffff;
+    --portfolio-demo-btn-shadow: rgba(102, 126, 234, 0.4);
+    --portfolio-demo-note-clr: #9ca3af;
 
     /* Our Team */
     --team-card-bgc: rgba(30, 30, 47, 0.6);
