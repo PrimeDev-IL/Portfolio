@@ -29,10 +29,10 @@ export function Portfolio() {
                     </div>
                 </div>
 
-                <div className="card">
-                    <div className="card-visual chart">
-                        {/* Chart placeholder */}
-                        <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+                {/* <div className="card">
+                    <div className="card-visual chart"> */}
+                {/* Chart placeholder */}
+                {/* <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
                             <polyline
                                 points="10,80 30,70 50,75 70,60 90,55 110,65 130,50 150,40 170,45 190,30"
                                 fill="none"
@@ -52,12 +52,12 @@ export function Portfolio() {
                             <span className="tag">Redux</span>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
-                <div className="card">
-                    <div className="card-visual">
-                        {/* Visual placeholder */}
-                        <div className="placeholder-lines alternate">
+                {/* <div className="card">
+                    <div className="card-visual"> */}
+                {/* Visual placeholder */}
+                {/* <div className="placeholder-lines alternate">
                             <div className="line line-1"></div>
                             <div className="line line-2"></div>
                             <div className="line line-3"></div>
@@ -74,7 +74,7 @@ export function Portfolio() {
                             <span className="tag">REST API</span>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
     )
