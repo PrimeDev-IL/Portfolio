@@ -15,10 +15,110 @@
         margin-top: 5px;
     }
 
+    .burger-menu {
+        display: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem;
+        flex-direction: column;
+        gap: 5px;
+        z-index: 101;
+
+        .burger-line {
+            width: 25px;
+            height: 3px;
+            background-color: var(--app-header-txt-clr);
+            transition: all 0.3s ease;
+            border-radius: 2px;
+
+            &.open:nth-child(1) {
+                transform: rotate(45deg) translate(8px, 8px);
+            }
+
+            &.open:nth-child(2) {
+                opacity: 0;
+            }
+
+            &.open:nth-child(3) {
+                transform: rotate(-45deg) translate(7px, -7px);
+            }
+        }
+    }
+
     >.app-nav {
         grid-column: -1;
         gap: 15px;
         margin-inline-end: 87px;
         color: var(--app-header-txt-clr);
+    }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .header-container {
+        .logo {
+            margin-inline-start: 40px;
+        }
+
+        >.app-nav {
+            gap: 12px;
+            margin-inline-end: 40px;
+            font-size: 0.95rem;
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .header-container {
+        grid-template-columns: auto 1fr auto;
+        padding: 0.5rem 1rem;
+
+        .logo {
+            margin-inline-start: 0;
+            font-size: 1.2rem;
+        }
+
+        .burger-menu {
+            display: flex;
+            grid-column: -1;
+        }
+
+        >.app-nav {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            height: 100vh;
+            width: 70%;
+            max-width: 300px;
+            background-color: var(--app-base-bgc-clr);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin: 0;
+            padding: 2rem;
+            box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+            transition: right 0.3s ease;
+            z-index: 100;
+
+            &.mobile-open {
+                right: 0;
+            }
+
+            a {
+                font-size: 1.2rem;
+                width: 100%;
+                text-align: center;
+                padding: 0.75rem;
+                border-radius: 8px;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: rgba(99, 102, 241, 0.2);
+                }
+            }
+        }
     }
 }
