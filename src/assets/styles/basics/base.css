@@ -6,6 +6,9 @@ body,
 
 html {
     scroll-behavior: smooth;
+    /* Force proper mobile viewport calculation */
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 
 * {
