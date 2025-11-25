@@ -3,32 +3,35 @@
     padding: 4rem 2rem;
 
     >.title {
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: 'Heebo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: bold;
         font-size: 42px;
         margin: 0 0 0.5rem 0;
         text-align: center;
+        direction: rtl;
     }
 
     >.subtitle {
         color: var(--services-subtitle-clr);
         font-size: 16px;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: 'Heebo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         margin: 0 0 3rem 0;
         text-align: center;
+        direction: rtl;
     }
 
     >.team-cards {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        justify-content: center;
         gap: 2rem;
         width: 100%;
-        max-width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
 
         >.team-card {
             background: var(--team-card-bgc);
             border: 2px solid var(--team-card-border-clr);
-            border-radius: 15px;
+            border-radius: 20px;
             padding: 2rem;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
             transition: transform 0.3s ease, border-color 0.3s ease;
@@ -71,6 +74,8 @@
                 font-weight: 600;
                 color: white;
                 margin: 0 0 0.5rem 0;
+                font-family: 'Heebo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                direction: rtl;
             }
 
             >.member-role {
@@ -78,6 +83,8 @@
                 font-size: 0.9rem;
                 color: var(--team-role-clr);
                 margin: 0 0 1.5rem 0;
+                font-family: 'Heebo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                direction: rtl;
             }
 
             >.member-bio {
@@ -85,21 +92,35 @@
                 font-size: 0.9rem;
                 color: var(--team-bio-clr);
                 line-height: 1.6;
-                margin: 0 0 1.5rem 0;
+                margin: 0 auto 1rem;
+                width: 90%;
+                font-family: 'Heebo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                direction: rtl;
+            }
+
+            >.expertise-title {
+                text-align: center;
+                font-size: 0.95rem;
+                font-weight: 600;
+                color: white;
+                margin: 1.5rem 0 0.75rem;
+                font-family: 'Heebo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                direction: rtl;
             }
 
             >.member-tags {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-                gap: 0.5rem;
+                gap: 0.75rem;
                 margin-bottom: 1.5rem;
+                direction: rtl;
 
                 >.tag {
                     background: var(--team-tag-bgc);
                     color: var(--team-tag-text-clr);
                     border: 1px solid var(--team-tag-border-clr);
-                    padding: 0.4rem 0.8rem;
+                    padding: 0.4rem 1rem;
                     border-radius: 20px;
                     font-size: 0.75rem;
                 }
@@ -116,6 +137,7 @@
                     color: var(--team-link-clr);
                     text-decoration: none;
                     transition: color 0.3s ease;
+                    font-family: 'Heebo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
                     &:hover {
                         color: var(--team-link-hover-clr);
