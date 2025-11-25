@@ -31,11 +31,11 @@ export function AppHeader({ scrollToSection, refs }) {
                 </button>
 
                 <nav className={`app-nav flex align-center ${isMenuOpen ? 'mobile-open' : ''}`}>
-                    <a href="#home" onClick={(e) => handleNavClick(e, null)}>Home</a>
-                    <a href="#services" onClick={(e) => handleNavClick(e, refs.servicesRef)}>Services</a>
-                    <a href="#portfolio" onClick={(e) => handleNavClick(e, refs.portfolioRef)}>Portfolio</a>
-                    <a href="#about" onClick={(e) => handleNavClick(e, refs.aboutRef)}>About</a>
-                    <a href="#contact" onClick={(e) => handleNavClick(e, refs.contactRef)}>Contact</a>
+                    <a href="#home" onClick={(e) => handleNavClick(e, null)}>בית</a>
+                    <a href="#services" onClick={(e) => handleNavClick(e, refs.servicesRef)}>שירותים</a>
+                    <a href="#portfolio" onClick={(e) => handleNavClick(e, refs.portfolioRef)}>פרוייקטים</a>
+                    <a href="#about" onClick={(e) => handleNavClick(e, refs.aboutRef)}>הצוות שלנו</a>
+                    <a href="#contact" onClick={(e) => handleNavClick(e, refs.contactRef)}>צור קשר</a>
                 </nav>
             </section>
         </header>
