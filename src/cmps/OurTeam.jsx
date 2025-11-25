@@ -19,7 +19,7 @@ export function OurTeam() {
 
                     {/* Short bio */}
                     <p className="member-bio">
-                        בעל ניסיון בבניית תהליכי אבטחה חכמים, פיתוח מערכות Web ואינטגרציות"  ארגוניות מורכבות.
+                        בעל ניסיון בבניית תהליכי אבטחה חכמים, פיתוח מערכות Web ואינטגרציות ארגוניות מורכבות.
                         מפתח Playbooks, Automations ו-Dashboards ל-Cortex XSOAR, ובונה מערכות React/Node.js המותאמות לצרכים אמיתיים של לקוחות.
                     </p>
 

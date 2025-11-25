@@ -6,7 +6,7 @@ export function Contact() {
             <h1 className="title">יצירת קשר</h1>
             <h2 className="subtitle">
                 רוצים לפתח מערכת Web, להטמיע תהליכי SOAR, או לשדרג את תשתיות הענן שלכם?
-                אשמח לשוחח וללוות אתכם בתהליך.
+                נשמח לשוחח וללוות אתכם בתהליך.
             </h2>
 
             <div className="contact-methods">
