@@ -167,6 +167,34 @@ export const heroSectionIcons = {
     )
 }
 
+export const sharedIcons = {
+    star: (
+        <svg className="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+        </svg>
+    ),
+    reactLogo: (
+        <svg className="react-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="2" fill="#61DAFB" />
+            <ellipse cx="12" cy="12" rx="10" ry="4" stroke="#61DAFB" strokeWidth="1" fill="none" />
+            <ellipse cx="12" cy="12" rx="10" ry="4" stroke="#61DAFB" strokeWidth="1" fill="none" transform="rotate(60 12 12)" />
+            <ellipse cx="12" cy="12" rx="10" ry="4" stroke="#61DAFB" strokeWidth="1" fill="none" transform="rotate(120 12 12)" />
+        </svg>
+    ),
+    cortexXsoar: (
+        <svg className="cortex-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+            <path d="M12 3l7 3v5c0 5-3.5 9-7 10-3.5-1-7-5-7-10V6l7-3z" stroke="#6366F1" strokeWidth="1.6" fill="none" />
+            <path d="M13 8l-3 4h3l-2 4" stroke="#6366F1" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+    ),
+    infinity: (
+        <svg className="infinity-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+            <path d="M7 8C5 8 4 10 4 12C4 14 5 16 7 16C9 16 11 14 12 12C13 10 15 8 17 8C19 8 20 10 20 12C20 14 19 16 17 16C15 16 13 14 12 12C11 10 9 8 7 8"
+                stroke="#6366F1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+        </svg>
+    )
+}
+
 export const servicesIcons = {
     soarIcon: (<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
         xmlns="http://www.w3.org/2000/svg">

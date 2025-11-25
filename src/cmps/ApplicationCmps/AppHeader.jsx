@@ -33,6 +33,7 @@ export function AppHeader({ scrollToSection, refs }) {
                 <nav className={`app-nav flex align-center ${isMenuOpen ? 'mobile-open' : ''}`}>
                     <a href="#home" onClick={(e) => handleNavClick(e, null)}>בית</a>
                     <a href="#services" onClick={(e) => handleNavClick(e, refs.servicesRef)}>שירותים</a>
+                    <a href="#services" onClick={(e) => handleNavClick(e, refs.packagesRef)}>החבילות שלנו</a>
                     <a href="#portfolio" onClick={(e) => handleNavClick(e, refs.portfolioRef)}>פרוייקטים</a>
                     <a href="#about" onClick={(e) => handleNavClick(e, refs.aboutRef)}>הצוות שלנו</a>
                     <a href="#contact" onClick={(e) => handleNavClick(e, refs.contactRef)}>צור קשר</a>

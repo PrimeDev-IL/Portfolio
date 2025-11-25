@@ -13,6 +13,7 @@
 @import 'cmps/Portfolio.css';
 @import 'cmps/OurTeam.css';
 @import 'cmps/Contact.css';
+@import 'cmps/Packages.css';
 
 /* ApplicationCmps */
 @import 'cmps/ApplicationCmps/appHeader.css';
