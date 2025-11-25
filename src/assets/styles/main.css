@@ -14,6 +14,7 @@
 @import 'cmps/OurTeam.css';
 @import 'cmps/Contact.css';
 @import 'cmps/Packages.css';
+@import 'cmps/Process.css';
 
 /* ApplicationCmps */
 @import 'cmps/ApplicationCmps/appHeader.css';

@@ -242,3 +242,47 @@ export const ContactIcons = {
         <path d="M9.3 9.5H11.7V10.6H11.8C12.2 9.8 13 9.2 14.3 9.2C17 9.2 17.5 11 17.5 13.3V18H15.1V14C15.1 13 15.1 11.6 13.7 11.6C12.2 11.6 12 12.7 12 13.8V18H9.3V9.5Z" />
     </svg>)
 }
+
+export const processIcons = {
+    search: (
+        <svg className="step-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="28" cy="28" r="15" stroke="white" strokeWidth="3" fill="none" />
+            <line x1="40" y1="40" x2="52" y2="52" stroke="white" strokeWidth="3" strokeLinecap="round" />
+        </svg>
+    ),
+    pencil: (
+        <svg className="step-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 48 L40 24 L52 36 L28 60 L12 64 L16 48 Z" stroke="white" strokeWidth="3" strokeLinejoin="round" fill="none" />
+            <line x1="36" y1="28" x2="48" y2="40" stroke="white" strokeWidth="3" />
+        </svg>
+    ),
+    gear: (
+        <svg className="step-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.43 12.98c.04-.32.07-.64.07-.98 0-.34-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.09-.16-.26-.25-.44-.25-.06 0-.12.01-.17.03l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.06-.02-.12-.03-.18-.03-.17 0-.34.09-.43.25l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98 0 .33.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.09.16.26.25.44.25.06 0 .12-.01.17-.03l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.06.02.12.03.18.03.17 0 .34-.09.43-.25l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zm-1.98-1.71c.04.31.05.52.05.73 0 .21-.02.43-.05.73l-.14 1.13.89.7 1.08.84-.7 1.21-1.27-.51-1.04-.42-.9.68c-.43.32-.84.56-1.25.73l-1.06.43-.16 1.13-.2 1.35h-1.4l-.19-1.35-.16-1.13-1.06-.43c-.43-.18-.83-.41-1.23-.71l-.91-.7-1.06.43-1.27.51-.7-1.21 1.08-.84.89-.7-.14-1.13c-.03-.31-.05-.54-.05-.74s.02-.43.05-.73l.14-1.13-.89-.7-1.08-.84.7-1.21 1.27.51 1.04.42.9-.68c.43-.32.84-.56 1.25-.73l1.06-.43.16-1.13.2-1.35h1.39l.19 1.35.16 1.13 1.06.43c.43.18.83.41 1.23.71l.91.7 1.06-.43 1.27-.51.7 1.21-1.07.85-.89.7.14 1.13zM12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"
+                fill="white" />
+        </svg>
+    ),
+    clipboard: (
+        <svg className="step-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="18" y="12" width="28" height="40" rx="3" stroke="white" strokeWidth="3" fill="none" />
+            <path d="M26 28 L30 32 L38 24" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+            <line x1="24" y1="38" x2="40" y2="38" stroke="white" strokeWidth="2" />
+            <line x1="24" y1="44" x2="36" y2="44" stroke="white" strokeWidth="2" />
+        </svg>
+    ),
+    chat: (
+        <svg className="step-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="12" y="16" width="40" height="28" rx="4" stroke="white" strokeWidth="3" fill="none" />
+            <circle cx="24" cy="30" r="2" fill="white" />
+            <circle cx="32" cy="30" r="2" fill="white" />
+            <circle cx="40" cy="30" r="2" fill="white" />
+            <path d="M26 44 L32 52 L32 44" stroke="white" strokeWidth="3" strokeLinejoin="round" fill="none" />
+        </svg>
+    ),
+    upload: (
+        <svg className="step-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="m16 5-1.42 1.42-1.59-1.59V16h-1.98V4.83L9.42 6.42 8 5l4-4zm4 5v11c0 1.1-.9 2-2 2H6c-1.11 0-2-.9-2-2V10c0-1.11.89-2 2-2h3v2H6v11h12V10h-3V8h3c1.1 0 2 .89 2 2"
+                fill="white" />
+        </svg>
+    )
+}

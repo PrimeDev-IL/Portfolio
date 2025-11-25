@@ -7,6 +7,7 @@ import { Contact } from "./cmps/Contact";
 import { useRef } from "react";
 import { Packages } from "./cmps/Packages";
 import { Hero } from "./cmps/Hero";
+import { Process } from "./cmps/Process";
 
 export function RootCmp() {
     const heroRef = useRef(null)
@@ -15,6 +16,7 @@ export function RootCmp() {
     const aboutRef = useRef(null)
     const contactRef = useRef(null)
     const packagesRef = useRef(null)
+    const processRef = useRef(null)
 
     const scrollToSection = (sectionRef) => {
         const headerOffset = 80;
@@ -29,7 +31,7 @@ export function RootCmp() {
 
     return (
         <div className="main-container">
-            <AppHeader scrollToSection={scrollToSection} refs={{ heroRef, servicesRef, portfolioRef, aboutRef, contactRef, packagesRef }} />
+            <AppHeader scrollToSection={scrollToSection} refs={{ heroRef, servicesRef, portfolioRef, aboutRef, contactRef, packagesRef, processRef }} />
             <main className="full">
                 <Hero />
                 <div ref={servicesRef}>
@@ -37,6 +39,9 @@ export function RootCmp() {
                 </div>
                 <div ref={packagesRef}>
                     <Packages />
+                </div>
+                <div ref={processRef}>
+                    <Process />
                 </div>
                 <div ref={portfolioRef}>
                     <Portfolio />

@@ -72,4 +72,18 @@
     --footer-bgc: #1a1a2e;
     --footer-border-clr: #334155;
     --footer-text-clr: #9ca3af;
+
+    /* Process */
+    --process-step1-start: #4A90E2;
+    --process-step1-end: #357ABD;
+    --process-step2-start: #9B59B6;
+    --process-step2-end: #7D3C98;
+    --process-step3-start: #27AE60;
+    --process-step3-end: #1E8449;
+    --process-step4-start: #E67E22;
+    --process-step4-end: #CA6F1E;
+    --process-step5-start: #F39C12;
+    --process-step5-end: #D68910;
+    --process-step6-start: #795548;
+    --process-step6-end: #5D4037;
 }
