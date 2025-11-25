@@ -3,8 +3,8 @@ import taskRail_Thumbnail from '../assets/img/taskRail-thumbnail.png'
 export function Portfolio() {
     return (
         <section className="portfolio-container">
-            <h1 className="title">Portfolio</h1>
-            <h2 className="subtitle">Selected projects across cloud security, automation, and full stack development.</h2>
+            <h1 className="title">פרויקטים נבחרים</h1>
+            <h2 className="subtitle">פתרונות אמיתיים שפיתחתי ללקוחות — Full Stack, אוטומציות ו־Cloud.</h2>
 
             <div className="portfolio-cards">
                 <div className="card">
@@ -12,19 +12,19 @@ export function Portfolio() {
                         <img src={taskRail_Thumbnail} alt='taskRail-thumbnail' />
                     </div>
                     <div className="card-content">
-                        <h3 className="card-title">TaskRail</h3>
-                        <p className="card-description">A collaborative task management platform built with React and Node.js. Features real-time board updates, drag-and-drop task organization, team collaboration, and cloud-synced data storage.</p>
+                        <h3 className="card-title">TaskRail — מערכת לניהול משימות וצוותים</h3>
+                        <p className="card-description">מערכת ווב שפותחה ב־React ו־Node.js לניהול משימות בזמן אמת. כוללת <span className="nowrap">Drag & Drop</span> מתקדם, שיתופי פעולה בין משתמשים, לוחות עבודה צבעוניים וסנכרון מלא בענן.</p>
                         <div className="tags">
-                            <span className="tag">React</span>
-                            <span className="tag">Node.js</span>
-                            <span className="tag">MongoDB</span>
                             <span className="tag">Redux</span>
+                            <span className="tag">MongoDB</span>
+                            <span className="tag">Node.js</span>
+                            <span className="tag">React</span>
                         </div>
                         <div className="card-actions">
                             <a href="https://taskrail.onrender.com" target="_blank" rel="noopener noreferrer" className="demo-btn">
-                                Live Demo
+                                לצפייה במערכת (Demo חי)
                             </a>
-                            <p className="demo-note">Hosted on free tier — initial load may take 30-60 seconds.</p>
+                            <p className="demo-note">המערכת מאוחסנת בשרת חינמי — ייתכן עיכוב קצר בטעינה הראשונית.</p>
                         </div>
                     </div>
                 </div>

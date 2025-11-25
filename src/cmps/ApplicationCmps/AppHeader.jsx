@@ -35,7 +35,7 @@ export function AppHeader({ scrollToSection, refs }) {
                     <a href="#services" onClick={(e) => handleNavClick(e, refs.servicesRef)}>שירותים</a>
                     <a href="#services" onClick={(e) => handleNavClick(e, refs.packagesRef)}>החבילות שלנו</a>
                     <a href="#services" onClick={(e) => handleNavClick(e, refs.processRef)}>התהליך שלנו</a>
-                    <a href="#portfolio" onClick={(e) => handleNavClick(e, refs.portfolioRef)}>פרוייקטים</a>
+                    <a href="#portfolio" onClick={(e) => handleNavClick(e, refs.portfolioRef)}>פרוייקטים נבחרים</a>
                     <a href="#about" onClick={(e) => handleNavClick(e, refs.aboutRef)}>הצוות שלנו</a>
                     <a href="#contact" onClick={(e) => handleNavClick(e, refs.contactRef)}>צור קשר</a>
                 </nav>
