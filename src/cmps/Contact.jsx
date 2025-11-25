@@ -1,12 +1,12 @@
-import { ContactIcons } from "./ApplicationCmps/svgIcons";
+import { ContactIcons, heroSectionIcons } from "./ApplicationCmps/svgIcons";
 
 export function Contact() {
     return (
         <section className="contact-container">
-            <h1 className="title">Get In Touch</h1>
+            <h1 className="title">יצירת קשר</h1>
             <h2 className="subtitle">
-                Looking to build secure automation workflows, modernize your cloud infrastructure,
-                or develop full-stack applications? Let's discuss your project.
+                רוצים לפתח מערכת Web, להטמיע תהליכי SOAR, או לשדרג את תשתיות הענן שלכם?
+                אשמח לשוחח וללוות אתכם בתהליך.
             </h2>
 
             <div className="contact-methods">
@@ -27,6 +27,17 @@ export function Contact() {
                         </a>
                     </div>
                 </div>
+            </div>
+
+            <div className="contact-buttons">
+                <button className="cta-button schedule">
+                    תיאום פגישת ייעוץ חינם
+                    {heroSectionIcons.phoneIcon}
+                </button>
+                <button className="cta-button whatsapp">
+                    שלחו הודעה ב - WhatsApp
+                    {heroSectionIcons.whatsappIcon}
+                </button>
             </div>
         </section>
     )
