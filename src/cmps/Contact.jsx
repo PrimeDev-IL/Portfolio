@@ -30,14 +30,14 @@ export function Contact() {
             </div>
 
             <div className="contact-buttons">
-                <button className="cta-button schedule">
+                <a href="https://calendly.com/lior-primedev/30min" target="_blank" rel="noopener noreferrer" className="cta-button schedule">
                     תיאום פגישת ייעוץ חינם
                     {heroSectionIcons.phoneIcon}
-                </button>
-                <button className="cta-button whatsapp">
+                </a>
+                <a href="https://wa.me/972503302036" target="_blank" rel="noopener noreferrer" className="cta-button whatsapp">
                     שלחו הודעה ב - WhatsApp
                     {heroSectionIcons.whatsappIcon}
-                </button>
+                </a>
             </div>
         </section>
     )

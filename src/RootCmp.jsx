@@ -30,30 +30,32 @@ export function RootCmp() {
     }
 
     return (
-        <div className="main-container">
+        <>
             <AppHeader scrollToSection={scrollToSection} refs={{ heroRef, servicesRef, portfolioRef, aboutRef, contactRef, packagesRef, processRef }} />
-            <main className="full">
-                <Hero />
-                <div ref={servicesRef}>
-                    <Services />
-                </div>
-                <div ref={packagesRef}>
-                    <Packages />
-                </div>
-                <div ref={processRef}>
-                    <Process />
-                </div>
-                <div ref={portfolioRef}>
-                    <Portfolio />
-                </div>
-                <div ref={aboutRef}>
-                    <OurTeam />
-                </div>
-                <div ref={contactRef}>
-                    <Contact />
-                </div>
-            </main >
-            <AppFooter />
-        </div >
+            <div className="main-container">
+                <main className="full">
+                    <Hero />
+                    <div ref={servicesRef}>
+                        <Services />
+                    </div>
+                    <div ref={packagesRef}>
+                        <Packages />
+                    </div>
+                    <div ref={processRef}>
+                        <Process />
+                    </div>
+                    <div ref={portfolioRef}>
+                        <Portfolio />
+                    </div>
+                    <div ref={aboutRef}>
+                        <OurTeam />
+                    </div>
+                    <div ref={contactRef}>
+                        <Contact />
+                    </div>
+                </main >
+                <AppFooter />
+            </div >
+        </>
     )
 }

@@ -202,31 +202,44 @@
             >.card {
                 >.card-visual {
                     height: 180px;
-                    padding: 1.5rem;
                 }
 
                 >.card-content {
-                    padding: 1.25rem;
+                    padding: 1.5rem 1rem;
 
                     >.card-title {
                         font-size: 1.1rem;
+                        padding-top: 1rem;
+                        width: 95%;
                     }
 
                     >.card-description {
                         font-size: 0.85rem;
+                        width: 95%;
+                        line-height: 1.7;
                     }
 
                     >.tags {
+                        gap: 0.5rem;
+
                         >.tag {
                             font-size: 0.75rem;
-                            padding: 0.3rem 0.6rem;
+                            padding: 0.35rem 0.75rem;
                         }
                     }
 
                     >.card-actions {
                         >.demo-btn {
-                            padding: 0.65rem 1.25rem;
-                            font-size: 0.9rem;
+                            padding: 0.7rem 1.5rem;
+                            font-size: 1rem;
+
+                            &::after {
+                                font-size: 1.2rem;
+                            }
+                        }
+
+                        >.demo-note {
+                            font-size: 0.7rem;
                         }
                     }
                 }

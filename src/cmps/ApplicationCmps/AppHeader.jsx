@@ -20,7 +20,7 @@ export function AppHeader({ scrollToSection, refs }) {
     }
 
     return (
-        <header className="app-header full main-layout">
+        <header className="app-header full">
             <section className="header-container">
                 <span className="logo align-center">{appHeaderIcons.appLogo}</span>
 

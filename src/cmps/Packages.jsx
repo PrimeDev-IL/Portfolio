@@ -106,7 +106,7 @@ export function Packages() {
                     <div className="card-header">
                         <h2 className="card-title">DevOps</h2>
                         <p className="price">החל מ ־ <span className="price-value">₪3,000</span></p>
-                        <p className="price-note">(או ₪150  – ₪250 לשעה)</p>
+                        <p className="price-note">(או ₪150 לשעה)</p>
                         <p className="price-note">(Retainer DevOps)</p>
                     </div>
 

@@ -3,7 +3,7 @@
     padding: 4rem 2rem;
 
     >.title {
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: 'Heebo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: bold;
         font-size: 42px;
         margin: 0 0 3rem 0;
@@ -161,6 +161,106 @@
                 color: var(--services-category-text-clr);
                 font-weight: 600;
                 font-size: 0.85rem;
+            }
+        }
+    }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .packages-container {
+        padding: 3rem 1.5rem;
+
+        >.title {
+            font-size: 36px;
+        }
+
+        >.packages-cards {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .packages-container {
+        padding: 2rem 1rem;
+
+        >.title {
+            font-size: 28px;
+        }
+
+        >.packages-cards {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+
+            >.card {
+                padding: 1.5rem;
+                min-height: auto;
+
+                .card-top {
+                    gap: 0.5rem;
+                }
+
+                .star,
+                .react-icon,
+                .cortex-icon,
+                .infinity-icon {
+                    width: 18px;
+                    height: 18px;
+                }
+
+                .card-eyebrow {
+                    font-size: 0.9rem;
+                }
+
+                >.card-header {
+                    >.card-title {
+                        font-size: 1rem;
+
+                        .infinity {
+                            font-size: 1.15rem;
+                        }
+
+                        .trademark {
+                            font-size: 0.6rem;
+                        }
+                    }
+
+                    >.price {
+                        font-size: 0.85rem;
+
+                        .price-value {
+                            font-size: 1.15rem;
+                        }
+                    }
+
+                    >.price-note {
+                        font-size: 0.7rem;
+                    }
+                }
+
+                >.card-sub {
+                    font-size: 0.8rem;
+                }
+
+                .package-features {
+                    li {
+                        font-size: 0.8rem;
+                        padding-right: 1.5rem;
+                    }
+
+                    li::before {
+                        top: 7px;
+                        width: 5px;
+                        height: 5px;
+                    }
+                }
+
+                .cta {
+                    font-size: 0.8rem;
+                }
             }
         }
     }
