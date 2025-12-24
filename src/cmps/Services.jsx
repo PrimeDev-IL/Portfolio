@@ -2,57 +2,64 @@ import { servicesIcons } from "./ApplicationCmps/svgIcons";
 
 export function Services() {
     return (
-        <section className="services-container">
-            <h1 className="title">השירותים שלנו</h1>
+        <section className="services-container" aria-labelledby="services-title">
+            <h1 id="services-title" className="title">השירותים שלנו</h1>
 
-            <div className="services-cards">
-                <div className="card flex align-center">
+            <div className="services-cards" role="list">
+                <article className="card flex align-center" role="listitem">
                     <div className="card-header">
-                        <span className="icon">{servicesIcons.soarIcon}</span>
-                        <h1>פיתוח והטמעה של מערכות <span>(Cortex XSOAR) SOAR</span></h1>
+                        <span className="icon" aria-hidden="true">{servicesIcons.webDevIcon}</span>
+                        <h2>פיתוח מערכות Web</h2>
+                        <span className="icon" aria-hidden="true">{servicesIcons.webDevIcon}</span>
                     </div>
-                    <p>פיתוח והטמעה של מערכות SOAR שמטפלות באירועי אבטחה בצורה אוטומטית.
-                        אנחנו מתכננים את הארכיטקטורה (כולל סביבת SaaS), מפתחים Playbooks, Automations, Dashboards ו-Jobs, ומחברים את המערכת לכלי האבטחה וה-IT הקיימים בארגון.
-                        התוצאה: פחות עבודה ידנית לצוות, תגובה מהירה יותר לאיומים והפחתת טעויות אנוש.
-                    </p>
-                    <div className="categories flex align-center">
-                        <span className="category">אוטומציות</span>
-                        <span className="category">אינטגרציות</span>
-                        <span className="category">תגובה לאירועי אבטחת מידע</span>
-                    </div>
-                </div>
-                <div className="card flex align-center">
+                    <p> מערכות Web מודרניות שמותאמות לצרכים של עסקים וסטארטאפים, עם דגש על ביצועים, אבטחה וחוויית משתמש.</p>
+                    <ul className="package-features">
+                        <li>פיתוח ממשק ב - React</li>
+                        <li>פיתוח צד שרת ב - Node.js</li>
+                        <li>יצירת API מאובטח וחיבור למערכות חיצוניות</li>
+                        <li>דשבורדים וממשקי ניהול</li>
+                        <li>אופטימיזציה למהירות ויציבות</li>
+                        <li>פריסה לענן (Vercel / AWS / Render)</li>
+                    </ul>
+                    <p className="cta">מתאים לעסקים שצריכים מערכת יציבה, מהירה וקלה להרחבה.</p>
+                </article>
+                <article className="card flex align-center" role="listitem">
                     <div className="card-header">
-                        <span className="icon">{servicesIcons.webDevIcon}</span>
-                        <h1>פיתוח מערכות Web</h1>
+                        <span className="icon" aria-hidden="true">{servicesIcons.devOpsIcon}</span>
+                        <h2>DevOps ותשתיות ענן</h2>
+                        <span className="icon" aria-hidden="true">{servicesIcons.devOpsIcon}</span>
                     </div>
-                    <p>דואגים שהתשתית שעליה רצה המערכת תהיה יציבה, מאובטחת וקלה להרחבה.
-                        הקמה ושיפור של CI/CD pipelines, Docker, Kubernetes, IaC ו-Monitoring – כדי שתוכלו לשחרר גרסאות מהר, בביטחון ובלי כאבי ראש.
-                    </p>
-                    <div className="categories flex align-center">
-                        <span className="category">Frontend</span>
-                        <span className="category">Backend</span>
-                        <span className="category">React</span>
-                        <span className="category">Node.JS</span>
-                        <span className="category">API Integration</span>
-                    </div>
-                </div>
-                <div className="card flex align-center">
+                    <p>הקמה וניהול של תשתיות בקנה מידה גדול עם תהליכי CI/CD, פריסות אוטומטיות וניטור מלא.</p>
+                    <ul className="package-features">
+                        <li>הקמת CI/CD pipelines</li>
+                        <li>Containerization עם Docker</li>
+                        <li>פריסה לענן AWS / Render / Vercel</li>
+                        <li>	ניטור, לוגים והתראות (Grafana / ELK)</li>
+                        <li>שיפור ביצועים וקיצור זמני טעינה</li>
+                        <li>תמיכה בפרודקשן ובתקלות שוטפות</li>
+                    </ul>
+                    <p className="cta">מתאים לסטארטאפים וחברות עם מערכות פעילות שדורשות זמינות וביצועים.</p>
+                </article>
+                <article className="card flex align-center" role="listitem">
                     <div className="card-header">
-                        <span className="icon">{servicesIcons.devOpsIcon}</span>
-                        <h1>DevOps</h1>
+                        <span className="icon" aria-hidden="true">{servicesIcons.soarIcon}</span>
+                        <h2>SOAR ואוטומציות אבטחה <span>(Cortex XSOAR)</span>
+                        </h2>
+                        <span className="icon" aria-hidden="true">{servicesIcons.soarIcon}</span>
                     </div>
-                    <p>הקמת תשתיות פרודקשן יציבות ויעילות:
-                        CI/CD pipelines, Docker, ניהול סביבות, אוטומציות פריסה ו-Monitoring.
+                    <p class="service-desc">
+                        פיתוח Playbooks, אוטומציות ואינטגרציות לארגונים שרוצים לייעל את תהליכי ה-SOC ולקצר את זמן הטיפול באירועים.
                     </p>
-                    <div className="categories flex align-center">
-                        <span className="category">CI/CD</span>
-                        <span className="category">Docker</span>
-                        <span className="category">Kubernetes</span>
-                        <span className="category">IaC</span>
-                        <span className="category">Monitoring</span>
-                    </div>
-                </div>
+                    <ul className="package-features">
+                        <li>פיתוח Playbooks מאפס</li>
+                        <li>אוטומציות Incident Response</li>
+                        <li>בניית אינטגרציות מותאמות (Python / JavaScript)</li>
+                        <li>Dashboards ו-Widgets מתקדמים</li>
+                        <li>תהליכי Jobs לתחזוקה אוטומטית</li>
+                        <li>חיבור ל-EDR / SIEM / Ticketing</li>
+                    </ul>
+                    <p className="cta">מתאים ל-SOC, ארגוני IT וחברות אבטחת מידע.</p>
+                </article>
             </div>
         </section >
     )

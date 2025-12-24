@@ -1,0 +1,132 @@
+.accessibility-statement-container {
+    min-height: 100vh;
+    background: var(--app-base-bgc-clr);
+    padding: 6rem 2rem 4rem;
+}
+
+.accessibility-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(30, 30, 47, 0.6);
+    padding: 3rem;
+    border-radius: 12px;
+    border: 1px solid #4f46e5;
+    color: white;
+    direction: ltr;
+}
+
+.accessibility-content h1 {
+    color: white;
+    font-size: clamp(28px, 4vw, 42px);
+    margin-bottom: 1.5rem;
+    font-family: 'Assistant', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.accessibility-content h2 {
+    color: #a78bfa;
+    font-size: clamp(20px, 3vw, 28px);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Assistant', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.accessibility-content p {
+    line-height: 1.8;
+    margin: 1rem 0;
+    color: #cbd5e1;
+}
+
+.accessibility-content strong {
+    color: white;
+    font-weight: 600;
+}
+
+.accessibility-content ul {
+    margin: 1rem 0;
+    padding-right: 2rem;
+    list-style: disc;
+}
+
+.accessibility-content li {
+    margin: 0.75rem 0;
+    line-height: 1.7;
+    color: #cbd5e1;
+}
+
+.accessibility-content a {
+    color: #6366f1;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color 0.3s ease;
+}
+
+.accessibility-content a:hover {
+    color: #a78bfa;
+}
+
+.accessibility-content .contact-info {
+    background: rgba(99, 102, 241, 0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+.accessibility-content .contact-info ul {
+    list-style: none;
+    padding-right: 0;
+}
+
+.accessibility-content .contact-info li {
+    margin: 0.5rem 0;
+}
+
+.accessibility-content .back-button {
+    margin-top: 3rem;
+    background: var(--hero-cta-btn-bgc);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Assistant', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    letter-spacing: 0.02em;
+}
+
+.accessibility-content .back-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .accessibility-statement-container {
+        padding: 5rem 1rem 2rem;
+    }
+
+    .accessibility-content {
+        padding: 2rem 1.5rem;
+    }
+
+    .accessibility-content h1 {
+        font-size: 24px;
+    }
+
+    .accessibility-content h2 {
+        font-size: 20px;
+        margin-top: 2rem;
+    }
+
+    .accessibility-content ul {
+        padding-right: 1.5rem;
+    }
+
+    .accessibility-content .back-button {
+        width: 100%;
+        padding: 0.85rem 1.5rem;
+        font-size: 1rem;
+    }
+}

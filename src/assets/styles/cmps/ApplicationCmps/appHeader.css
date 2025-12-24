@@ -9,9 +9,21 @@
     isolation: isolate;
 }
 
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 98;
+    backdrop-filter: blur(2px);
+}
+
 .header-container {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
+    align-items: center;
 
     .logo {
         margin-inline-start: 80px;
@@ -27,6 +39,7 @@
         flex-direction: column;
         gap: 5px;
         z-index: 101;
+        position: relative;
 
         .burger-line {
             width: 25px;
@@ -75,17 +88,23 @@
 /* Mobile */
 @media (max-width: 768px) {
     .header-container {
-        grid-template-columns: auto 1fr auto;
-        padding: 0.5rem 1rem;
+        grid-template-columns: 1fr auto;
+        padding: 0.75rem 1rem;
+        align-items: center;
+        position: relative;
 
         .logo {
             margin-inline-start: 0;
             font-size: 1.2rem;
+            grid-column: 1;
         }
 
         .burger-menu {
-            display: flex;
-            grid-column: -1;
+            display: flex !important;
+            grid-column: 2;
+            justify-self: end;
+            margin-inline-end: 0;
+            z-index: 103;
         }
 
         >.app-nav {
@@ -96,6 +115,7 @@
             width: 70%;
             max-width: 300px;
             background-color: var(--app-base-bgc-clr);
+            display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -103,23 +123,46 @@
             margin: 0;
             padding: 2rem;
             box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
-            transition: right 0.3s ease;
-            z-index: 100;
+            transition: right 0.3s ease-in-out;
+            z-index: 99;
+            pointer-events: none;
 
             &.mobile-open {
                 right: 0;
+                pointer-events: auto;
             }
 
-            a {
+            a,
+            button,
+            .nav-item {
                 font-size: 1.2rem;
                 width: 100%;
                 text-align: center;
                 padding: 0.75rem;
                 border-radius: 8px;
                 transition: background-color 0.3s ease;
+                color: var(--app-header-txt-clr);
+                text-decoration: none;
+                opacity: 1;
+                cursor: pointer;
+                background: none;
+                border: none;
+                font-family: inherit;
+                touch-action: manipulation;
+                -webkit-tap-highlight-color: rgba(99, 102, 241, 0.3);
+                user-select: none;
+                -webkit-user-select: none;
+                pointer-events: auto;
+                position: relative;
+                z-index: 9999;
 
                 &:hover {
                     background-color: rgba(99, 102, 241, 0.2);
+                    text-decoration: none;
+                }
+
+                &:active {
+                    background-color: rgba(99, 102, 241, 0.3);
                 }
             }
         }

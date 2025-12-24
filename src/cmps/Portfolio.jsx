@@ -2,37 +2,44 @@ import taskRail_Thumbnail from '../assets/img/taskRail-thumbnail.png'
 
 export function Portfolio() {
     return (
-        <section className="portfolio-container">
-            <h1 className="title">פרויקטים נבחרים</h1>
+        <section className="portfolio-container" aria-labelledby="portfolio-title">
+            <h1 id="portfolio-title" className="title">פרויקטים נבחרים</h1>
             <h2 className="subtitle">פתרונות אמיתיים שפיתחתי ללקוחות — Full Stack, אוטומציות ו־Cloud.</h2>
 
-            <div className="portfolio-cards">
-                <div className="card">
+            <div className="portfolio-cards" role="list">
+                <article className="card" role="listitem">
                     <div className="card-visual">
-                        <img src={taskRail_Thumbnail} alt='taskRail-thumbnail' />
+                        <img src={taskRail_Thumbnail} alt='צילום מסך של מערכת TaskRail לניהול משימות' />
                     </div>
                     <div className="card-content">
                         <h3 className="card-title">TaskRail — מערכת לניהול משימות וצוותים</h3>
-                        <p className="card-description">מערכת ווב שפותחה ב־React ו־Node.js לניהול משימות בזמן אמת. כוללת <span className="nowrap">Drag & Drop</span> מתקדם, שיתופי פעולה בין משתמשים, לוחות עבודה צבעוניים וסנכרון מלא בענן.</p>
-                        <div className="tags">
-                            <span className="tag">Redux</span>
-                            <span className="tag">MongoDB</span>
-                            <span className="tag">Node.js</span>
-                            <span className="tag">React</span>
+                        <p className="card-description">מערכת לניהול משימות שמבוססת על React ו־Node.js, עם תמיכה ב־Drag & Drop, עדכונים בזמן אמת, ממשק נקי וזרימה נוחה בין משתמשים. מתאימה לניהול צוותים, פרויקטים וזרימות עבודה.</p>
+                        <div className="tags" role="list" aria-label="טכנולוגיות בשימוש">
+                            <span className="tag" role="listitem">Redux</span>
+                            <span className="tag" role="listitem">MongoDB</span>
+                            <span className="tag" role="listitem">Node.js</span>
+                            <span className="tag" role="listitem">React</span>
                         </div>
                         <div className="card-actions">
-                            <a href="https://taskrail-backend.onrender.com" target="_blank" rel="noopener noreferrer" className="demo-btn">
-                                לצפייה במערכת (Demo חי)
+                            <a
+                                href="https://taskrail-backend.onrender.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="demo-btn"
+                                aria-label="לצפייה במערכת TaskRail בשידור חי - נפתח בחלון חדש"
+                            >
+                                לצפייה במערכת (Live Demo)
                             </a>
-                            <p className="demo-note">המערכת מאוחסנת בשרת חינמי — ייתכן עיכוב קצר בטעינה הראשונית.</p>
+                            <p className="demo-note">פרויקט אישי שנבנה לצרכי למידה — ומשמש כדוגמה לפיתוח מערכת מלאה</p>
                         </div>
                     </div>
-                </div>
+                </article>
+            </div>
 
-                {/* <div className="card">
+            {/* <div className="card">
                     <div className="card-visual chart"> */}
-                {/* Chart placeholder */}
-                {/* <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+            {/* Chart placeholder */}
+            {/* <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
                             <polyline
                                 points="10,80 30,70 50,75 70,60 90,55 110,65 130,50 150,40 170,45 190,30"
                                 fill="none"
@@ -54,10 +61,10 @@ export function Portfolio() {
                     </div>
                 </div> */}
 
-                {/* <div className="card">
+            {/* <div className="card">
                     <div className="card-visual"> */}
-                {/* Visual placeholder */}
-                {/* <div className="placeholder-lines alternate">
+            {/* Visual placeholder */}
+            {/* <div className="placeholder-lines alternate">
                             <div className="line line-1"></div>
                             <div className="line line-2"></div>
                             <div className="line line-3"></div>
@@ -75,7 +82,6 @@ export function Portfolio() {
                         </div>
                     </div>
                 </div> */}
-            </div>
         </section>
     )
 }

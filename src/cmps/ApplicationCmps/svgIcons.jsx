@@ -88,7 +88,7 @@ export const heroSectionIcons = {
             <ellipse cx="180" cy="235" rx="120" ry="15" fill="#020617" opacity="0.4" />
 
             {/* BACK CLOUD */}
-            <g opacity="0.2">
+            <g opacity="1">
                 <path d="M60 50 C76 34 102 30 120 40 C130 20 162 16 184 28 C202 24 224 28 238 42 C250 52 256 66 254 80 L228 80 C222 88 212 94 200 96 L100 96 C84 92 72 84 66 72 C60 64 58 58 60 50 Z"
                     fill="none" stroke="#6366F1" strokeWidth="1.5" strokeDasharray="4 6" />
             </g>
@@ -106,17 +106,10 @@ export const heroSectionIcons = {
             {/* header bar */}
             <rect x="60" y="70" width="240" height="30" rx="18"
                 fill="#020617" opacity="0.98" />
-            <circle cx="80" cy="85" r="4.5" fill="#F97316" />
-            <circle cx="96" cy="85" r="4.5" fill="#22C55E" />
-            <circle cx="112" cy="85" r="4.5" fill="#6366F1" />
-
-            {/* STATUS PILL (CI/CD) */}
-            <rect x="200" y="78" width="90" height="14" rx="7" fill="#020617" stroke="#111827" strokeWidth="1" />
-            <circle cx="210" cy="85" r="3" fill="#22C55E" />
-            <text x="218" y="88.5" fontSize="7" fill="#E5E7EB"
-                fontFamily="system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">
-                pipelines · passing
-            </text>
+            {/* macOS traffic-light controls: close, minimize, fullscreen */}
+            <circle cx="80" cy="85" r="4.5" fill="#ff5f57" />
+            <circle cx="96" cy="85" r="4.5" fill="#ffbd2e" />
+            <circle cx="112" cy="85" r="4.5" fill="#28c940" />
 
             {/* LEFT SIDE: FULL STACK LAYERS */}
             <g transform="translate(75,110)">
@@ -150,19 +143,21 @@ export const heroSectionIcons = {
                 {/* code block bg */}
                 <rect x="0" y="0" width="90" height="60" rx="8" fill="#020617" stroke="#111827" strokeWidth="1" />
 
-                {/* code lines */}
-                <rect x="12" y="12" width="36" height="5" rx="2.5" fill="#6366F1" />
-                <rect x="12" y="22" width="50" height="5" rx="2.5" fill="#A855F7" opacity="0.85" />
-                <rect x="12" y="32" width="30" height="5" rx="2.5" fill="#6366F1" opacity="0.7" />
-                <rect x="12" y="42" width="44" height="5" rx="2.5" fill="#A855F7" opacity="0.75" />
+                {/* code lines - added a couple more for density */}
+                <rect x="12" y="6" width="24" height="4" rx="2" fill="#5458E6" opacity="0.95" />
+                <rect x="12" y="14" width="36" height="5" rx="2.5" fill="#6366F1" />
+                <rect x="12" y="24" width="50" height="5" rx="2.5" fill="#A855F7" opacity="0.85" />
+                <rect x="12" y="34" width="30" height="5" rx="2.5" fill="#6366F1" opacity="0.7" />
+                <rect x="12" y="44" width="44" height="5" rx="2.5" fill="#A855F7" opacity="0.75" />
+                <rect x="12" y="52" width="28" height="4" rx="2" fill="#8B5CF6" opacity="0.7" />
 
-                {/* </> */}
-                <text x="64" y="36" fontSize="16" fill="#E5E7EB"
+                {/* move the closing tag to the lower-right corner of the code block */}
+                <text x="85" y="35" fontSize="12" textAnchor="end" fill="#E5E7EB"
                     fontFamily="system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">
                     &lt;/&gt;
                 </text>
             </g>
-        </svg>
+        </svg >
 
     )
 }

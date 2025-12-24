@@ -2,44 +2,44 @@ import { processIcons } from './ApplicationCmps/svgIcons';
 
 export function Process() {
     return (
-        <section className="process-container">
-            <h1 className="title">תהליך העבודה</h1>
+        <section className="process-container" aria-labelledby="process-title">
+            <h1 id="process-title" className="title">תהליך העבודה</h1>
 
-            <div className="process-steps">
-                <article className="step step-1">
-                    <div className="step-number">1</div>
+            <div className="process-steps" role="list">
+                <article className="step step-1" role="listitem">
+                    <div className="step-number" aria-label="שלב 1">1</div>
                     <h3 className="step-title">פגישת אפיון</h3>
-                    {processIcons.search}
+                    <span aria-hidden="true">{processIcons.search}</span>
                 </article>
 
-                <article className="step step-2">
-                    <div className="step-number">2</div>
+                <article className="step step-2" role="listitem">
+                    <div className="step-number" aria-label="שלב 2">2</div>
                     <h3 className="step-title">תכנון הפתרון</h3>
-                    {processIcons.pencil}
+                    <span aria-hidden="true">{processIcons.pencil}</span>
                 </article>
 
-                <article className="step step-3">
-                    <div className="step-number">3</div>
+                <article className="step step-3" role="listitem">
+                    <div className="step-number" aria-label="שלב 3">3</div>
                     <h3 className="step-title">פיתוח מערכת</h3>
-                    {processIcons.gear}
+                    <span aria-hidden="true">{processIcons.gear}</span>
                 </article>
 
-                <article className="step step-4">
-                    <div className="step-number">4</div>
+                <article className="step step-4" role="listitem">
+                    <div className="step-number" aria-label="שלב 4">4</div>
                     <h3 className="step-title">בדיקות איכות</h3>
-                    {processIcons.clipboard}
+                    <span aria-hidden="true">{processIcons.clipboard}</span>
                 </article>
 
-                <article className="step step-5">
-                    <div className="step-number">5</div>
+                <article className="step step-5" role="listitem">
+                    <div className="step-number" aria-label="שלב 5">5</div>
                     <h3 className="step-title">חוות דעת ושיפור</h3>
-                    {processIcons.chat}
+                    <span aria-hidden="true">{processIcons.chat}</span>
                 </article>
 
-                <article className="step step-6">
-                    <div className="step-number">6</div>
+                <article className="step step-6" role="listitem">
+                    <div className="step-number" aria-label="שלב 6">6</div>
                     <h3 className="step-title">השקת הפרויקט</h3>
-                    {processIcons.upload}
+                    <span aria-hidden="true">{processIcons.upload}</span>
                 </article>
             </div>
         </section>
