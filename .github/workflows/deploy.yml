@@ -41,3 +41,21 @@ jobs:
           aws cloudfront create-invalidation \
           --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
           --paths "/*"
+
+      - name: Notify Slack (CI failed)
+        if: failure()
+        run: |
+          curl -X POST -H 'Content-type: application/json' \
+          --data '{
+          "text": "❌ *CI failed*\nRepo: ${{ github.repository }}\nBranch: ${{ github.ref_name }}\nCommit: ${{ github.sha }}"
+          }' \
+          ${{ secrets.SLACK_WEBHOOK_CI }}
+
+      - name: Notify Slack (CI success)
+        if: success()
+        run: |
+          curl -X POST -H 'Content-type: application/json' \
+          --data '{
+          "text": "✅ *CI success*\nRepo: ${{ github.repository }}\nBranch: ${{ github.ref_name }}"
+          }' \
+          ${{ secrets.SLACK_WEBHOOK_CI }}
