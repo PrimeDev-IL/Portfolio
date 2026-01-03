@@ -6,34 +6,51 @@ export function Contact() {
     const [notification, setNotification] = useState({ show: false, message: '', type: '' });
 
     const handleSubmit = async (e) => {
-        e.preventDefault();
-        setIsSubmitting(true);
+        e.preventDefault()
+        setIsSubmitting(true)
 
-        const formData = new FormData(e.target);
+        const payload = {
+            name: e.target.name.value.trim(),
+            phone: e.target.phone.value.trim(),
+            email: e.target.email.value.trim(),
+            message: e.target.message.value.trim()
+        }
 
         try {
-            const response = await fetch('https://formspree.io/f/mdkqdobz', {
+            const res = await fetch('https://p5amuw6pwl.execute-api.il-central-1.amazonaws.com/prod/contact', {
                 method: 'POST',
-                body: formData,
                 headers: {
+                    'Content-Type': 'application/json',
                     'Accept': 'application/json'
-                }
-            });
+                },
+                body: JSON.stringify(payload)
+            })
 
-            if (response.ok) {
-                setNotification({ show: true, message: 'ההודעה נשלחה בהצלחה! נחזור אליך בהקדם.', type: 'success' });
-                e.target.reset();
+            const data = await res.json().catch(() => ({}))
+
+            if (res.ok && data?.ok) {
+                setNotification({
+                    show: true,
+                    message: 'ההודעה נשלחה בהצלחה! נחזור אליך בהקדם!',
+                    type: 'success'
+                })
+                e.target.reset()
             } else {
-                throw new Error('Failed to send');
+                throw new Error(data?.error || 'Failed to send')
             }
-        } catch (error) {
-            console.error('Error sending email:', error);
-            setNotification({ show: true, message: 'שגיאה בשליחת ההודעה. אנא נסה שוב או צור קשר ישירות.', type: 'error' });
+        } catch (err) {
+            console.error('Error sending contact: ', err)
+            setNotification({
+                show: true,
+                message: 'שגיאה בשליחת ההודעה. אנא נסה שוב או צור קשר ישירות.',
+                type: 'error'
+            })
         } finally {
-            setIsSubmitting(false);
-            setTimeout(() => setNotification({ show: false, message: '', type: '' }), 5000);
+            setIsSubmitting(false)
+            setTimeout(() => setNotification({ show: false, message: '', type: '' }), 5000)
         }
-    };
+    }
+
 
     return (
         <section className="contact-container" aria-labelledby="contact-title">
