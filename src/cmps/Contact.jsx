@@ -17,7 +17,7 @@ export function Contact() {
         }
 
         try {
-            const res = await fetch('https://p5amuw6pwl.execute-api.il-central-1.amazonaws.com/prod/contact', {
+            const res = await fetch('https://api.primedev.co.il/contact', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
