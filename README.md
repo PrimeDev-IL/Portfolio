@@ -74,6 +74,11 @@ To run this project locally:
    ```
 4. Open ```http://localhost:5173``` in your browser.
 
+## ⚖️ License
+
+This project is proprietary software. All rights reserved to **PrimeDev**.
+Code is available for viewing and evaluation purposes only.
+
 ## 📬 Contact
 
 **PrimeDev**
