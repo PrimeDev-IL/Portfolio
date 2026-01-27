@@ -10,6 +10,10 @@ export function AppFooter() {
                     <Link to="/accessibility-statement" aria-label="הצהרת נגישות">
                         הצהרת נגישות
                     </Link>
+                    {" | "}
+                    <Link to="/privacy-policy" aria-label="מדיניות פרטיות">
+                        מדיניות פרטיות
+                    </Link>
                 </p>
             </div>
         </footer>
