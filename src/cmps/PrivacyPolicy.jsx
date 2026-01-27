@@ -1,5 +1,4 @@
 import { useNavigate } from 'react-router-dom'
-import '../assets/styles/cmps/PrivacyPolicy.css'
 
 export function PrivacyPolicy() {
     const navigate = useNavigate()
