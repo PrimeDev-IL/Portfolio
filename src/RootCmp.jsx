@@ -41,7 +41,7 @@ export function RootCmp() {
         <>
             <Routes>
                 <Route path="/accessibility-statement" element={<AccessibilityStatement />} />
-                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                <Route path="/privacy" element={<PrivacyPolicy />} />
                 <Route path="/" element={
                     <>
                         <AppHeader scrollToSection={scrollToSection} refs={{ heroRef, servicesRef, portfolioRef, aboutRef, contactRef, packagesRef, processRef }} />

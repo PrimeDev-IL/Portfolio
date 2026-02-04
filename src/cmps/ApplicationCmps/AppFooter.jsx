@@ -11,7 +11,7 @@ export function AppFooter() {
                         הצהרת נגישות
                     </Link>
                     {" | "}
-                    <Link to="/privacy-policy" aria-label="מדיניות פרטיות">
+                    <Link to="/privacy" aria-label="מדיניות פרטיות">
                         מדיניות פרטיות
                     </Link>
                 </p>
