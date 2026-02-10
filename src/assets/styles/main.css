@@ -20,6 +20,7 @@
 @import 'cmps/AccessibilityStatement.css';
 @import 'cmps/PrivacyPolicy.css';
 @import 'cmps/StartForm.css';
+@import 'cmps/LandingPage.css';
 
 /* ApplicationCmps */
 @import 'cmps/ApplicationCmps/appHeader.css';
