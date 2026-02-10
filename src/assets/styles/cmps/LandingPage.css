@@ -161,6 +161,12 @@
     box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
 }
 
+.cta-button.primary:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
 .cta-button.secondary {
     background: white;
     color: #6366f1;

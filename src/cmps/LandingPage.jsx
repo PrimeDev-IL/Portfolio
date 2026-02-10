@@ -9,6 +9,7 @@ export function LandingPage() {
     });
 
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -20,31 +21,53 @@ export function LandingPage() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        
+
         // Validate form data
         if (!formData.name || !formData.phone) {
             alert('נא למלא שם וטלפון');
             return;
         }
-        
+
+        setIsSubmitting(true);
+
         try {
-            // Here you can integrate with your backend/webhook/Make.com automation
-            console.log('Form submitted:', formData);
-            
-            // TODO: Send to your backend or webhook
-            // Example: await fetch('/api/leads', { method: 'POST', body: JSON.stringify(formData) });
-            
-            setIsSubmitted(true);
-            
-            // Reset form after 3 seconds
-            setTimeout(() => {
-                setIsSubmitted(false);
+            // Send to PrimeDev backend (matching StartForm pattern)
+            const response = await fetch('https://api.primedev.co.il/leads', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: formData.name,
+                    phone: formData.phone,
+                    message: formData.message,
+                    source: 'landing_page',
+                    timestamp: new Date().toISOString()
+                })
+            });
+
+            const data = await response.json().catch(() => ({}));
+
+            if (response.ok && data?.ok) {
+                setIsSubmitted(true);
+
+                // Reset form
                 setFormData({ name: '', phone: '', message: '' });
-            }, 3000);
-            
+
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    setIsSubmitted(false);
+                }, 5000);
+            } else {
+                throw new Error(data?.error || 'Failed to send');
+            }
+
         } catch (error) {
             console.error('Error submitting form:', error);
-            alert('אירעה שגיאה. אנא נסו שוב.');
+            alert('אירעה שגיאה בשליחת הטופס. אנא נסו שוב או צרו קשר בטלפון.');
+        } finally {
+            setIsSubmitting(false);
         }
     };
 
@@ -94,7 +117,7 @@ export function LandingPage() {
                             <p className="sub-headline">
                                 מערכת שעובדת 24/7 ומתריעה לכם מיד כשיש משהו חשוד
                             </p>
-                            
+
                             {/* Key Benefits */}
                             <ul className="benefits-list">
                                 <li>
@@ -121,7 +144,7 @@ export function LandingPage() {
                             <div className="lead-form-card">
                                 <h3>רוצים לדעת איך זה עובד?</h3>
                                 <p className="form-subtitle">שיחה של 15 דקות - בחינם וללא התחייבות</p>
-                                
+
                                 <form onSubmit={handleSubmit} className="lead-form">
                                     <div className="form-group">
                                         <label htmlFor="name">שם מלא *</label>
@@ -135,7 +158,7 @@ export function LandingPage() {
                                             placeholder="הזינו את שמכם"
                                         />
                                     </div>
-                                    
+
                                     <div className="form-group">
                                         <label htmlFor="phone">טלפון *</label>
                                         <input
@@ -148,7 +171,7 @@ export function LandingPage() {
                                             placeholder="050-1234567"
                                         />
                                     </div>
-                                    
+
                                     <div className="form-group">
                                         <label htmlFor="message">הודעה (אופציונלי)</label>
                                         <textarea
@@ -160,9 +183,9 @@ export function LandingPage() {
                                             placeholder="ספרו לנו על הצורך שלכם"
                                         />
                                     </div>
-                                    
-                                    <button type="submit" className="cta-button primary">
-                                        {isSubmitted ? '✓ נשלח בהצלחה' : 'דברו איתי'}
+
+                                    <button type="submit" className="cta-button primary" disabled={isSubmitting}>
+                                        {isSubmitting ? '⏳ שולח...' : isSubmitted ? '✓ נשלח בהצלחה' : 'דברו איתי'}
                                     </button>
                                 </form>
                             </div>
@@ -176,17 +199,17 @@ export function LandingPage() {
                 <div className="landing-container">
                     <h2>עלינו</h2>
                     <p className="about-text">
-                        <strong>PrimeDev</strong> מתמחה בהגנת עסקים מפני פריצות סייבר ואיומי אבטחה. 
-                        אנחנו מספקים פתרונות טכנולוגיים פשוטים ומקצועיים שמגנים על האתרים, המערכות והמידע של העסק שלכם - 
+                        <strong>PrimeDev</strong> מתמחה בהגנת עסקים מפני פריצות סייבר ואיומי אבטחה.
+                        אנחנו מספקים פתרונות טכנולוגיים פשוטים ומקצועיים שמגנים על האתרים, המערכות והמידע של העסק שלכם -
                         בלי שתצטרכו להיות מומחי מחשבים כדי להבין את זה.
                     </p>
                     <p className="about-text">
-                        במהלך השנתיים האחרונות עבדנו עם ארגונים גדולים בתחום הפיננסי ובנינו עבורם מערכות הגנה אוטומטיות 
-                        שמזהות סכנות ומתריעות עליהן בזמן אמת. עכשיו אנחנו מביאים את אותה טכנולוגיה מתקדמת לעסקים קטנים ובינוניים - 
+                        במהלך השנתיים האחרונות עבדנו עם ארגונים גדולים בתחום הפיננסי ובנינו עבורם מערכות הגנה אוטומטיות
+                        שמזהות סכנות ומתריעות עליהן בזמן אמת. עכשיו אנחנו מביאים את אותה טכנולוגיה מתקדמת לעסקים קטנים ובינוניים -
                         כדי שגם אתם תוכלו לישון בשקט בלילה.
                     </p>
                     <p className="about-text">
-                        <strong>המטרה שלנו:</strong> להפוך הגנה מתקדמת מפני פריצות מ"מוצר יקר לחברות ענק" לפתרון נגיש, פשוט וחכם 
+                        <strong>המטרה שלנו:</strong> להפוך הגנה מתקדמת מפני פריצות מ"מוצר יקר לחברות ענק" לפתרון נגיש, פשוט וחכם
                         שכל בעל עסק יכול להשתמש בו - במחיר הוגן ובלי להיות תלוי במומחים.
                     </p>
                 </div>
@@ -199,7 +222,7 @@ export function LandingPage() {
                     <p className="section-subtitle">
                         ראייה מלאה על כל מה שקורה - בשפה פשוטה וברורה
                     </p>
-                    
+
                     <div className="services-grid">
                         {services.map((service, index) => (
                             <div key={index} className="service-card">
@@ -227,38 +250,38 @@ export function LandingPage() {
             <section className="testimonials-section">
                 <div className="landing-container">
                     <h2>הניסיון שלנו</h2>
-                    
+
                     <div className="credentials-grid">
                         <div className="credential-card">
                             <div className="credential-icon">🏦</div>
                             <h3>עבדנו עם החברות הגדולות</h3>
                             <p className="credential-text">
-                                במשך שנתיים בנינו מערכות הגנה אוטומטיות לחברות פיננסיות גדולות - 
+                                במשך שנתיים בנינו מערכות הגנה אוטומטיות לחברות פיננסיות גדולות -
                                 אותן חברות שבנקים וחברות ביטוח סומכים עליהן כדי לשמור על הכסף והמידע שלכם.
                             </p>
                         </div>
-                        
+
                         <div className="credential-card">
                             <div className="credential-icon">🔒</div>
                             <h3>מומחים באבטחת מידע</h3>
                             <p className="credential-text">
-                                ניסיון רב שנים בעבודה עם צוותי אבטחה בארגונים גדולים, 
-                                בניית מערכות שמזהות סכנות ומתריעות עליהן אוטומטית - 
+                                ניסיון רב שנים בעבודה עם צוותי אבטחה בארגונים גדולים,
+                                בניית מערכות שמזהות סכנות ומתריעות עליהן אוטומטית -
                                 לפני שהן הופכות לבעיה אמיתית.
                             </p>
                         </div>
-                        
+
                         <div className="credential-card">
                             <div className="credential-icon">⚙️</div>
                             <h3>יודעים לבנות מערכות שעובדות</h3>
                             <p className="credential-text">
-                                מומחיות בבניית אתרים ומערכות אינטרנט מורכבות, 
-                                אוטומציות חכמות שחוסכות זמן וכסף, 
+                                מומחיות בבניית אתרים ומערכות אינטרנט מורכבות,
+                                אוטומציות חכמות שחוסכות זמן וכסף,
                                 ופתרונות מותאמים בדיוק לצרכים שלכם.
                             </p>
                         </div>
                     </div>
-                    
+
                     <div className="social-proof">
                         <p>למידע נוסף ולהמלצות מקצועיות:</p>
                         <div className="review-links">
@@ -289,7 +312,7 @@ export function LandingPage() {
             <section className="final-cta">
                 <div className="landing-container">
                     <h2>אל תחכו עד שיהיה מאוחר מדי - בואו נבדוק את המצב עכשיו</h2>
-                    
+
                     {/* Second Form */}
                     <div className="final-form-wrapper">
                         <form onSubmit={handleSubmit} className="lead-form compact">
@@ -310,8 +333,8 @@ export function LandingPage() {
                                     required
                                     placeholder="טלפון"
                                 />
-                                <button type="submit" className="cta-button primary">
-                                    {isSubmitted ? '✓ נשלח' : 'שלחו'}
+                                <button type="submit" className="cta-button primary" disabled={isSubmitting}>
+                                    {isSubmitting ? '⏳ שולח...' : isSubmitted ? '✓ נשלח' : 'שלחו'}
                                 </button>
                             </div>
                         </form>
