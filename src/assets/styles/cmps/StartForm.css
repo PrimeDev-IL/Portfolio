@@ -382,11 +382,95 @@
         padding: 6rem 1rem 3rem;
     }
 
+    .start-form-header h1 {
+        font-size: 32px;
+    }
+
+    .start-form-header .subtitle {
+        font-size: 0.95rem;
+    }
+
+    .start-form-header .brand-mark svg {
+        width: 220px;
+        height: 55px;
+    }
+
     .form-row {
         grid-template-columns: 1fr;
     }
 
+    .form-row .form-group:first-child input[type="date"] {
+        margin-top: 0;
+    }
+
     .start-form-card {
         padding: 1.5rem;
+    }
+
+    .intro-card {
+        padding: 1.25rem;
+    }
+
+    .back-link {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    .form-group label {
+        font-size: 0.85rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 0.9rem;
+        padding: 0.7rem 0.8rem;
+    }
+
+    .checkbox-label span {
+        font-size: 0.9rem;
+    }
+
+    .start-form-actions .submit-button {
+        padding: 0.85rem 1.2rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .start-form-page {
+        padding: 5.5rem 0.75rem 2.5rem;
+    }
+
+    .start-form-header h1 {
+        font-size: 28px;
+    }
+
+    .start-form-header .subtitle {
+        font-size: 0.9rem;
+    }
+
+    .start-form-header .brand-mark svg {
+        width: 200px;
+        height: 50px;
+    }
+
+    .start-form-card {
+        padding: 1.25rem;
+    }
+
+    .intro-card {
+        padding: 1rem;
+    }
+
+    .pill-list span {
+        font-size: 0.8rem;
+        padding: 0.35rem 0.65rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 16px; /* Prevents auto-zoom on iOS */
     }
 }

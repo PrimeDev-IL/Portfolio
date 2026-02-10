@@ -322,6 +322,16 @@
             gap: 1.5rem;
 
             >.contact-info {
+                >.contact-buttons {
+                    >.button-row {
+                        flex-direction: column;
+                    }
+
+                    >.button-row .cta-button {
+                        width: 100%;
+                    }
+                }
+
                 >.contact-method {
                     padding: 1.25rem;
 
@@ -373,6 +383,50 @@
                     .submit-button {
                         padding: 0.85rem 1.5rem;
                         font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-container {
+        padding: 1.5rem 0.75rem;
+
+        >.contact-content {
+            >.contact-info {
+                >.contact-buttons {
+                    >.cta-button {
+                        padding: 0.75rem 1.25rem;
+                        font-size: 0.9rem;
+                    }
+                }
+
+                >.contact-method {
+                    padding: 1rem;
+
+                    >.method-details {
+                        h3 {
+                            font-size: 0.9rem;
+                        }
+
+                        a {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+
+            >.contact-form {
+                padding: 1.25rem;
+
+                form {
+                    .form-group {
+                        input,
+                        textarea {
+                            font-size: 16px; /* Prevents auto-zoom on iOS */
+                        }
                     }
                 }
             }
