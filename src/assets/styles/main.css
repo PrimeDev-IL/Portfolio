@@ -19,6 +19,7 @@
 @import 'cmps/Process.css';
 @import 'cmps/AccessibilityStatement.css';
 @import 'cmps/PrivacyPolicy.css';
+@import 'cmps/StartForm.css';
 
 /* ApplicationCmps */
 @import 'cmps/ApplicationCmps/appHeader.css';

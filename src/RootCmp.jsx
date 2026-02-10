@@ -10,6 +10,7 @@ import { Hero } from "./cmps/Hero";
 import { Process } from "./cmps/Process";
 import { AccessibilityStatement } from "./cmps/AccessibilityStatement";
 import { PrivacyPolicy } from "./cmps/PrivacyPolicy";
+import { StartForm } from "./cmps/StartForm";
 import { Routes, Route } from "react-router-dom";
 
 export function RootCmp() {
@@ -42,6 +43,7 @@ export function RootCmp() {
             <Routes>
                 <Route path="/accessibility-statement" element={<AccessibilityStatement />} />
                 <Route path="/privacy" element={<PrivacyPolicy />} />
+                <Route path="/forms/start" element={<StartForm />} />
                 <Route path="/" element={
                     <>
                         <AppHeader scrollToSection={scrollToSection} refs={{ heroRef, servicesRef, portfolioRef, aboutRef, contactRef, packagesRef, processRef }} />

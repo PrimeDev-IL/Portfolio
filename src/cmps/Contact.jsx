@@ -81,25 +81,35 @@ export function Contact() {
                     </div>
 
                     <div className="contact-buttons">
+                        <div className="button-row">
+                            <a
+                                href="https://calendly.com/lior-primedev/30min"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="cta-button schedule"
+                                aria-label="תיאום פגישת ייעוץ חינם - נפתח בחלון חדש"
+                            >
+                                תיאום פגישת ייעוץ חינם
+                                {heroSectionIcons.phoneIcon}
+                            </a>
+                            <a
+                                href="https://wa.me/972522613894"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="cta-button whatsapp"
+                                aria-label="שלחו הודעה ב-WhatsApp - נפתח בחלון חדש"
+                            >
+                                שלחו הודעה ב - WhatsApp
+                                {heroSectionIcons.whatsappIcon}
+                            </a>
+                        </div>
                         <a
-                            href="https://calendly.com/lior-primedev/30min"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="cta-button schedule"
-                            aria-label="תיאום פגישת ייעוץ חינם - נפתח בחלון חדש"
+                            href="/forms/start"
+                            className="cta-button primary full-width"
+                            aria-label="התחל פרויקט חדש"
                         >
-                            תיאום פגישת ייעוץ חינם
-                            {heroSectionIcons.phoneIcon}
-                        </a>
-                        <a
-                            href="https://wa.me/972522613894"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="cta-button whatsapp"
-                            aria-label="שלחו הודעה ב-WhatsApp - נפתח בחלון חדש"
-                        >
-                            שלחו הודעה ב - WhatsApp
-                            {heroSectionIcons.whatsappIcon}
+                            התחל פרויקט חדש
+                            {heroSectionIcons.rocketIcon}
                         </a>
                     </div>
                 </div>
