@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { heroSectionIcons } from "./ApplicationCmps/svgIcons";
+import { heroSectionIcons, appHeaderIcons } from "./ApplicationCmps/svgIcons";
 
 export function LandingPage() {
     const [formData, setFormData] = useState({
@@ -42,7 +42,7 @@ export function LandingPage() {
                     name: formData.name,
                     phone: formData.phone,
                     message: formData.message,
-                    source: 'landing_page',
+                    source: 'automation_landing',
                     timestamp: new Date().toISOString()
                 })
             });
@@ -73,68 +73,81 @@ export function LandingPage() {
 
     const services = [
         {
-            icon: "🛡️",
-            title: "שומרים על העסק 24 שעות ביממה",
-            description: "מערכת אוטומטית שבודקת את האתר והמערכות שלכם כל הזמן - גם כשאתם ישנים או בחופשה",
-            target: "עובד תמיד"
+            icon: "⚙️",
+            title: "אוטומציה של תהליכים עסקיים",
+            description: "הפכו משימות ידניות חוזרות לתהליכים אוטומטיים שרצים בלי מגע יד — חיסכון של שעות עבודה כל יום",
+            target: "יעילות מקסימלית"
         },
         {
-            icon: "🔍",
-            title: "מוצאים בעיות לפני שהן הופכות לאסון",
-            description: "אלפי בדיקות כל יום כדי למצוא חורי אבטחה, דלתות פתוחות להאקרים, ודליפות מידע",
-            target: "מניעה מראש"
+            icon: "🔗",
+            title: "חיבור בין כל המערכות",
+            description: "חיברו את ה-CRM, מערכת החשבוניות, המייל, וואטסאפ וכל כלי שאתם עובדים איתו — הכל מדבר עם הכל",
+            target: "אינטגרציות חכמות"
         },
         {
-            icon: "⚡",
-            title: "מתריעים לכם מיד כשיש בעיה",
-            description: "קיבלתם התראה למייל או לנייד עם הסבר ברור מה קרה ומה לעשות עם זה",
-            target: "תגובה מהירה"
+            icon: "🚀",
+            title: "CI/CD ופריסות אוטומטיות",
+            description: "קוד חדש עולה לאוויר בלחיצת כפתור — בדיקות, בנייה ופריסה אוטומטיים בלי עצירות",
+            target: "פריסה מהירה"
         },
         {
             icon: "📊",
-            title: "דוח ברור פעם בחודש",
-            description: "דוח פשוט שמראה לכם מה מצאנו, מה תיקנו, ומה צריך לעשות - בשפה של בני אדם",
-            target: "הכל שקוף"
+            title: "דוחות ודשבורדים אוטומטיים",
+            description: "קבלו עדכונים, דוחות וניתוחים ישירות למייל או לדשבורד — בלי להפיק ידנית כלום",
+            target: "תובנות בזמן אמת"
         },
         {
-            icon: "🌐",
-            title: "הגנה על כל מה שיש לכם באינטרנט",
-            description: "האתר, הדוא\"ל, השרתים, האחסון בענן - הכל מוגן במקום אחד",
-            target: "כיסוי מלא"
+            icon: "🤖",
+            title: "בוטים וצ'אטבוטים לעסק",
+            description: "בוטים שמקבלים פניות, עונים ללקוחות, שולחים תזכורות ומנהלים משימות — 24/7 בלי הפסקה",
+            target: "שירות רציף"
+        },
+        {
+            icon: "☁️",
+            title: "תשתיות ענן ו-DevOps",
+            description: "הקמה וניהול תשתיות בענן עם Docker, Kubernetes, ו-Infrastructure as Code — יציבות ושליטה מלאה",
+            target: "תשתיות חכמות"
         }
     ];
 
     return (
         <div className="landing-page">
+            {/* Landing Header with Logo */}
+            <header className="landing-header">
+                <a href="/" className="landing-logo" aria-label="PrimeDev - דף הבית">
+                    {appHeaderIcons.appLogo}
+                </a>
+            </header>
+
             {/* Hero Section with Form */}
             <section id="hero" className="landing-hero">
                 <div className="landing-container">
                     <div className="hero-grid">
                         <div className="hero-content">
                             <h1 className="main-headline">
-                                גילינו בעיית אבטחה? אתם יודעים על זה תוך דקה
+                                אוטומציה לעסקים — תנו לטכנולוגיה לעבוד בשבילכם
                             </h1>
                             <p className="sub-headline">
-                                מערכת שעובדת 24/7 ומתריעה לכם מיד כשיש משהו חשוד
+                                חסכו זמן, הפחיתו טעויות והגדילו רווחים עם פתרונות אוטומציה מותאמים לעסק שלכם
                             </p>
 
                             {/* Key Benefits */}
                             <ul className="benefits-list">
                                 <li>
                                     <span className="check-icon">✓</span>
-                                    מערכת אוטומטית שבודקת הכל כל הזמן - גם בלילה
+                                    אוטומציה של תהליכים ידניים — מהזמנות ועד דוחות
                                 </li>
                                 <li>
                                     <span className="check-icon">✓</span>
-                                    קיבלתם התראה מיידית אם יש משהו חשוד
+                                    חיבור בין כל המערכות שלכם למכונה אחת חלקה
                                 </li>
                                 <li>
                                     <span className="check-icon">✓</span>
-                                    דוחות פשוטים עם הסבר מה לעשות
+                                    פריסות אוטומטיות ותשתיות ענן יציבות
                                 </li>
                                 <li>
                                     <span className="check-icon">✓</span>
-                                    תמיד תדעו מה הולך בעסק שלכם
+                                    חיסכון של עד 80% מהזמן על משימות חוזרות
                                 </li>
                             </ul>
                         </div>
@@ -142,8 +155,8 @@ export function LandingPage() {
                         {/* Lead Form */}
                         <div id="lead-form" className="lead-form-wrapper">
                             <div className="lead-form-card">
-                                <h3>רוצים לדעת איך זה עובד?</h3>
-                                <p className="form-subtitle">שיחה של 15 דקות - בחינם וללא התחייבות</p>
+                                <h3>רוצים לייעל את העסק?</h3>
+                                <p className="form-subtitle">שיחת ייעוץ של 15 דקות — בחינם וללא התחייבות</p>
 
                                 <form onSubmit={handleSubmit} className="lead-form">
                                     <div className="form-group">
@@ -180,7 +193,7 @@ export function LandingPage() {
                                             value={formData.message}
                                             onChange={handleInputChange}
                                             rows="3"
-                                            placeholder="ספרו לנו על הצורך שלכם"
+                                            placeholder="ספרו לנו איזה תהליכים הייתם רוצים לייעל"
                                         />
                                     </div>
 
@@ -199,18 +212,17 @@ export function LandingPage() {
                 <div className="landing-container">
                     <h2>עלינו</h2>
                     <p className="about-text">
-                        <strong>PrimeDev</strong> מתמחה בהגנת עסקים מפני פריצות סייבר ואיומי אבטחה.
-                        אנחנו מספקים פתרונות טכנולוגיים פשוטים ומקצועיים שמגנים על האתרים, המערכות והמידע של העסק שלכם -
-                        בלי שתצטרכו להיות מומחי מחשבים כדי להבין את זה.
+                        <strong>PrimeDev</strong> מתמחה באוטומציה של תהליכים עסקיים, פיתוח מערכות Web ותשתיות DevOps.
+                        אנחנו עוזרים לעסקים לחסוך זמן, להפחית טעויות ולגדול מהר יותר — באמצעות טכנולוגיה שעובדת בשבילכם.
                     </p>
                     <p className="about-text">
-                        במהלך השנתיים האחרונות עבדנו עם ארגונים גדולים בתחום הפיננסי ובנינו עבורם מערכות הגנה אוטומטיות
-                        שמזהות סכנות ומתריעות עליהן בזמן אמת. עכשיו אנחנו מביאים את אותה טכנולוגיה מתקדמת לעסקים קטנים ובינוניים -
-                        כדי שגם אתם תוכלו לישון בשקט בלילה.
+                        במהלך השנים עבדנו עם ארגונים גדולים וסטארטאפים, בנינו מערכות אוטומציה מורכבות, חיברנו בין
+                        עשרות כלים ומערכות, והקמנו תשתיות ענן יציבות שרצות בצורה אוטומטית. עכשיו אנחנו מביאים את
+                        אותו ניסיון לעסקים קטנים ובינוניים שרוצים לעבוד חכם יותר.
                     </p>
                     <p className="about-text">
-                        <strong>המטרה שלנו:</strong> להפוך הגנה מתקדמת מפני פריצות מ"מוצר יקר לחברות ענק" לפתרון נגיש, פשוט וחכם
-                        שכל בעל עסק יכול להשתמש בו - במחיר הוגן ובלי להיות תלוי במומחים.
+                        <strong>המטרה שלנו:</strong> להפוך כל תהליך ידני חוזר לתהליך אוטומטי — כדי שתוכלו להתמקד
+                        בצמיחת העסק במקום במשימות שחוזרות על עצמן.
                     </p>
                 </div>
             </section>
@@ -218,9 +230,9 @@ export function LandingPage() {
             {/* Services Section */}
             <section className="services-section">
                 <div className="landing-container">
-                    <h2>איך אנחנו שומרים על העסק שלכם?</h2>
+                    <h2>איך אנחנו מייעלים את העסק שלכם?</h2>
                     <p className="section-subtitle">
-                        ראייה מלאה על כל מה שקורה - בשפה פשוטה וברורה
+                        פתרונות אוטומציה מותאמים — מתהליכים פשוטים ועד מערכות מורכבות
                     </p>
 
                     <div className="services-grid">
@@ -239,9 +251,9 @@ export function LandingPage() {
             {/* CTA Middle Section */}
             <section className="cta-middle">
                 <div className="landing-container">
-                    <h2>רוצים לישון בשקט? בואו נדבר</h2>
+                    <h2>רוצים לחסוך שעות עבודה כל שבוע? בואו נדבר</h2>
                     <a href="#lead-form" className="cta-button secondary">
-                        יצירת קשר עכשיו
+                        בואו נייעל את העסק שלכם
                     </a>
                 </div>
             </section>
@@ -249,35 +261,33 @@ export function LandingPage() {
             {/* Experience & Credentials Section */}
             <section className="testimonials-section">
                 <div className="landing-container">
-                    <h2>הניסיון שלנו</h2>
+                    <h2>למה לבחור ב-PrimeDev?</h2>
 
                     <div className="credentials-grid">
                         <div className="credential-card">
-                            <div className="credential-icon">🏦</div>
-                            <h3>עבדנו עם החברות הגדולות</h3>
+                            <div className="credential-icon">🏢</div>
+                            <h3>ניסיון עם ארגונים גדולים</h3>
                             <p className="credential-text">
-                                במשך שנתיים בנינו מערכות הגנה אוטומטיות לחברות פיננסיות גדולות -
-                                אותן חברות שבנקים וחברות ביטוח סומכים עליהן כדי לשמור על הכסף והמידע שלכם.
+                                בנינו מערכות אוטומציה מורכבות לארגונים פיננסיים גדולים —
+                                כולל Playbooks, תהליכי CI/CD, אינטגרציות בין מערכות ודשבורדים אוטומטיים.
                             </p>
                         </div>
 
                         <div className="credential-card">
-                            <div className="credential-icon">🔒</div>
-                            <h3>מומחים באבטחת מידע</h3>
+                            <div className="credential-icon">⚡</div>
+                            <h3>מומחים באוטומציה ו-DevOps</h3>
                             <p className="credential-text">
-                                ניסיון רב שנים בעבודה עם צוותי אבטחה בארגונים גדולים,
-                                בניית מערכות שמזהות סכנות ומתריעות עליהן אוטומטית -
-                                לפני שהן הופכות לבעיה אמיתית.
+                                ניסיון רב שנים בבניית פתרונות אוטומציה — מסקריפטים פשוטים ועד
+                                מערכות SOAR מורכבות, תשתיות ענן ותהליכי פריסה אוטומטיים.
                             </p>
                         </div>
 
                         <div className="credential-card">
-                            <div className="credential-icon">⚙️</div>
-                            <h3>יודעים לבנות מערכות שעובדות</h3>
+                            <div className="credential-icon">🎯</div>
+                            <h3>פתרונות מותאמים לעסק שלכם</h3>
                             <p className="credential-text">
-                                מומחיות בבניית אתרים ומערכות אינטרנט מורכבות,
-                                אוטומציות חכמות שחוסכות זמן וכסף,
-                                ופתרונות מותאמים בדיוק לצרכים שלכם.
+                                לא פתרונות גנריים — אנחנו מבינים את התהליכים שלכם ובונים
+                                אוטומציות שמתאימות בדיוק לצרכים, לתקציב ולקצב הצמיחה של העסק.
                             </p>
                         </div>
                     </div>
@@ -299,11 +309,11 @@ export function LandingPage() {
             {/* Partners/Trust Section */}
             <section className="trust-section">
                 <div className="landing-container">
-                    <h3>סטטיסטיקות שחשוב לדעת</h3>
+                    <h3>המספרים מדברים בעד עצמם</h3>
                     <div className="partners-logos">
-                        <div className="partner-badge">📊 60% מהעסקים הקטנים נסגרים תוך 6 חודשים מפריצה</div>
-                        <div className="partner-badge">⏱️ 200 ימים ממוצע לגילוי פריצה</div>
-                        <div className="partner-badge">💰 150,000₪ עלות ממוצעת לנזק ראשוני</div>
+                        <div className="partner-badge">⚡ עד 80% חיסכון בזמן על משימות חוזרות</div>
+                        <div className="partner-badge">🔗 100+ אינטגרציות בין מערכות</div>
+                        <div className="partner-badge">🚀 פריסות אוטומטיות בלחיצת כפתור</div>
                     </div>
                 </div>
             </section>
@@ -311,7 +321,7 @@ export function LandingPage() {
             {/* Final CTA Section */}
             <section className="final-cta">
                 <div className="landing-container">
-                    <h2>אל תחכו עד שיהיה מאוחר מדי - בואו נבדוק את המצב עכשיו</h2>
+                    <h2>מוכנים לייעל את העסק? השאירו פרטים ונחזור אליכם היום</h2>
 
                     {/* Second Form */}
                     <div className="final-form-wrapper">
