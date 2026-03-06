@@ -41,7 +41,7 @@ export function Packages() {
                     </div>
 
                     <div className="card-header">
-                        <h2 className="card-title">Full Stack</h2>
+                        <h2 className="card-title">מערכת Web מלאה</h2>
                         <p className="price">החל מ ־<span className="price-value"> 7,500 ₪  + מע״מ</span></p>
                         <p className="price-note">(מחיר משתנה לפי היקף המערכת והאינטגרציות)</p>
                     </div>
