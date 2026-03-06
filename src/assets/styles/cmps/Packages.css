@@ -25,7 +25,7 @@
 
     >.packages-cards {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         gap: 1.5rem;
         width: 100%;
 
@@ -78,10 +78,16 @@
                 height: 24px;
             }
 
+            .ai-bot-icon {
+                width: 24px;
+                height: 24px;
+            }
+
             .card-eyebrow {
                 font-size: 1rem;
                 font-weight: 700;
                 letter-spacing: 0.02em;
+                white-space: nowrap;
             }
 
             >.card-header {
@@ -193,6 +199,15 @@
 }
 
 
+/* Small Desktop */
+@media (max-width: 1440px) {
+    .packages-container {
+        >.packages-cards {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
 /* Tablet */
 @media (max-width: 1024px) {
     .packages-container {
@@ -225,7 +240,8 @@
                 .star,
                 .react-icon,
                 .cortex-icon,
-                .infinity-icon {
+                .infinity-icon,
+                .ai-bot-icon {
                     width: 18px;
                     height: 18px;
                 }

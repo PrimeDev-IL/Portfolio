@@ -95,52 +95,31 @@ export function Packages() {
                     <p className="cta">לארגונים עם מרכז SOC או צוות אבטחה פנימי</p>
                 </article>
 
-                {/* Card 4: Automation & AI Retainer */}
+                {/* Card 4: Automation */}
                 <article className="card" role="listitem">
                     <div className="card-top">
                         <span aria-hidden="true">{sharedIcons.aiBot}</span>
-                        <h3 className="card-eyebrow">חבילת "אוטומציה ו־AI"</h3>
+                        <h3 className="card-eyebrow">חבילת "Automation Retainer" ⚙️</h3>
                         <span aria-hidden="true">{sharedIcons.aiBot}</span>
                     </div>
 
                     <div className="card-header">
-                        <h2 className="card-title">Automation & AI Retainer</h2>
-                        <p className="price">החל מ ־ <span className="price-value">3,500 ₪ + מע״מ / חודש</span></p>
+                        <h2 className="card-title">Automation Retainer</h2>
+                        <p className="price">החל מ ־ <span className="price-value">3,500 ₪ + מע״מ</span></p>
+                        <p className="price-note">(ריטיינר חודשי)</p>
                     </div>
 
-                    <p className="card-sub">ליווי חודשי שוטף לאוטומציה — כדי שהעסק שלך יעבוד חכם יותר, 24/7.</p>
+                    <p className="card-sub">ליווי טכנולוגי שוטף — כדי שהעסק שלך יעבוד חכם, יציב וללא הפסקה.</p>
 
                     <ul className="package-features">
-                        <li>מיפוי תהליכים עסקיים (Process Mapping)</li>
+                        <li>מיפוי ואפיון תהליכים (Process Mapping)</li>
                         <li>אינטגרציות CRM / WhatsApp</li>
+                        <li>ניטור ותמיכה 24/7</li>
                         <li>אופטימיזציה ושיפור מתמיד</li>
+                        <li>בנק שעות פיתוח חודשי</li>
                     </ul>
 
-                    <p className="cta">מתאים לעסקים שרוצים לייעל תהליכים, לחסוך זמן ולהגדיל המרות באמצעות AI</p>
-                </article>
-
-                {/* Card 5: DevOps Package */}
-                <article className="card" role="listitem">
-                    <div className="card-top">
-                        <span aria-hidden="true">{sharedIcons.aiBot}</span>
-                        <h3 className="card-eyebrow">חבילת "אוטומציה ו־AI"</h3>
-                        <span aria-hidden="true">{sharedIcons.aiBot}</span>
-                    </div>
-
-                    <div className="card-header">
-                        <h2 className="card-title">Automation & AI Retainer</h2>
-                        <p className="price">החל מ ־ <span className="price-value">3,500 ₪ + מע״מ / חודש</span></p>
-                    </div>
-
-                    <p className="card-sub">ליווי חודשי שוטף לאוטומציה — כדי שהעסק שלך יעבוד חכם יותר, 24/7.</p>
-
-                    <ul className="package-features">
-                        <li>מיפוי תהליכים עסקיים (Process Mapping)</li>
-                        <li>אינטגרציות CRM / WhatsApp</li>
-                        <li>אופטימיזציה ושיפור מתמיד</li>
-                    </ul>
-
-                    <p className="cta">מתאים לעסקים שרוצים לייעל תהליכים, לחסוך זמן ולהגדיל המרות באמצעות AI</p>
+                    <p className="cta">מתאים לעסקים שרוצים שקט נפשי טכנולוגי וצמיחה מבוססת דאטה</p>
                 </article>
 
                 {/* Card 5: DevOps Package */}

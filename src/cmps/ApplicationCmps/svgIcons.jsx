@@ -187,6 +187,17 @@ export const sharedIcons = {
             <path d="M7 8C5 8 4 10 4 12C4 14 5 16 7 16C9 16 11 14 12 12C13 10 15 8 17 8C19 8 20 10 20 12C20 14 19 16 17 16C15 16 13 14 12 12C11 10 9 8 7 8"
                 stroke="#6366F1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
         </svg>
+    ),
+    aiBot: (
+        <svg className="ai-bot-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+            <rect x="4" y="8" width="16" height="12" rx="2" stroke="#6366F1" strokeWidth="1.6" fill="none" />
+            <circle cx="9" cy="14" r="1.5" fill="#6366F1" />
+            <circle cx="15" cy="14" r="1.5" fill="#6366F1" />
+            <line x1="12" y1="4" x2="12" y2="8" stroke="#6366F1" strokeWidth="1.6" strokeLinecap="round" />
+            <circle cx="12" cy="3" r="1.2" fill="#6366F1" />
+            <path d="M1 13L4 13" stroke="#6366F1" strokeWidth="1.6" strokeLinecap="round" />
+            <path d="M20 13L23 13" stroke="#6366F1" strokeWidth="1.6" strokeLinecap="round" />
+        </svg>
     )
 }
 
