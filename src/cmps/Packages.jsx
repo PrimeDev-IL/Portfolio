@@ -149,7 +149,7 @@ export function Packages() {
                     <p className="cta">מתאים לסטארטאפים, חברות טכנולוגיה וצוותים שמפעילים תשתיות בענן</p>
                 </article>
             </div>
-            
+
             <p className="pricing-disclaimer">* כל המחירים אינם כוללים מע״מ כחוק</p>
         </section>
     )

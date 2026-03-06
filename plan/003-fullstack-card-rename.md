@@ -14,11 +14,11 @@ Replace the card title `Full Stack` with **מערכת Web מלאה** — which i
 This aligns with the rest of the card's messaging and is immediately understandable by a non-technical audience: "A complete Web system."
 
 ### Alternative options considered:
-| Option | Text | Reasoning |
-|--------|------|-----------|
-| **A (recommended)** | מערכת Web מלאה | Already used in the eyebrow/subtitle, consistent, clear |
-| B | מערכת אינטרנט מותאמת | "Custom internet system" — slightly vague |
-| C | פיתוח מערכת אונליין | "Online system development" — focuses on the process, not the product |
+| Option              | Text                 | Reasoning                                                             |
+| ------------------- | -------------------- | --------------------------------------------------------------------- |
+| **A (recommended)** | מערכת Web מלאה       | Already used in the eyebrow/subtitle, consistent, clear               |
+| B                   | מערכת אינטרנט מותאמת | "Custom internet system" — slightly vague                             |
+| C                   | פיתוח מערכת אונליין  | "Online system development" — focuses on the process, not the product |
 
 ## Files to Change
 - `src/cmps/Packages.jsx` — line ~51: change the `<h2>` card title from `Full Stack` to the chosen text.
