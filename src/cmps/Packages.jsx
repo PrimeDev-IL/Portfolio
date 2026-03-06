@@ -132,8 +132,8 @@ export function Packages() {
 
                     <div className="card-header">
                         <h2 className="card-title">DevOps</h2>
-                        <p className="price">החל מ ־ <span className="price-value">₪3,000 + מע״מ</span></p>
-                        <p className="price-note">(או ₪150 לשעה + מע״מ  — Retainer DevOps)</p>
+                        <p className="price">החל מ ־ <span className="price-value">4,500 ₪ + מע״מ</span></p>
+                        <p className="price-note">(ריטיינר חודשי · שעות נוספות ב־400 ₪/שעה)</p>
                     </div>
 
                     <p className="card-sub">ניהול ותחזוקת תשתיות בענן, אוטומציה ו-CI/CD — כדי שהמערכת שלכם תרוץ יציב, מהיר וקל לפריסה.</p>
@@ -141,9 +141,9 @@ export function Packages() {
                     <ul className="package-features">
                         <li>Dockerization לשירותים קיימים</li>
                         <li>הקמת CI/CD pipelines</li>
-                        <li>Deployment ל־Cloud (Render / Vercel / AWS)</li>
                         <li>Monitoring והתראות</li>
-                        <li>אוטומציה של תהליכי פיתוח ופריסה</li>
+                        <li>אופטימיזציה של עלויות ענן (FinOps)</li>
+                        <li>הטמעת ארכיטקטורת Scalable לעמידה בעומסים</li>
                     </ul>
 
                     <p className="cta">מתאים לסטארטאפים, חברות טכנולוגיה וצוותים שמפעילים תשתיות בענן</p>
