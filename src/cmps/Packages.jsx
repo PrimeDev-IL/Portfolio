@@ -95,7 +95,55 @@ export function Packages() {
                     <p className="cta">לארגונים עם מרכז SOC או צוות אבטחה פנימי</p>
                 </article>
 
-                {/* Card 4: DevOps Package */}
+                {/* Card 4: Automation & AI Retainer */}
+                <article className="card" role="listitem">
+                    <div className="card-top">
+                        <span aria-hidden="true">{sharedIcons.aiBot}</span>
+                        <h3 className="card-eyebrow">חבילת "אוטומציה ו־AI"</h3>
+                        <span aria-hidden="true">{sharedIcons.aiBot}</span>
+                    </div>
+
+                    <div className="card-header">
+                        <h2 className="card-title">Automation & AI Retainer</h2>
+                        <p className="price">החל מ ־ <span className="price-value">3,500 ₪ + מע״מ / חודש</span></p>
+                    </div>
+
+                    <p className="card-sub">ליווי חודשי שוטף לאוטומציה — כדי שהעסק שלך יעבוד חכם יותר, 24/7.</p>
+
+                    <ul className="package-features">
+                        <li>מיפוי תהליכים עסקיים (Process Mapping)</li>
+                        <li>אינטגרציות CRM / WhatsApp</li>
+                        <li>אופטימיזציה ושיפור מתמיד</li>
+                    </ul>
+
+                    <p className="cta">מתאים לעסקים שרוצים לייעל תהליכים, לחסוך זמן ולהגדיל המרות באמצעות AI</p>
+                </article>
+
+                {/* Card 5: DevOps Package */}
+                <article className="card" role="listitem">
+                    <div className="card-top">
+                        <span aria-hidden="true">{sharedIcons.aiBot}</span>
+                        <h3 className="card-eyebrow">חבילת "אוטומציה ו־AI"</h3>
+                        <span aria-hidden="true">{sharedIcons.aiBot}</span>
+                    </div>
+
+                    <div className="card-header">
+                        <h2 className="card-title">Automation & AI Retainer</h2>
+                        <p className="price">החל מ ־ <span className="price-value">3,500 ₪ + מע״מ / חודש</span></p>
+                    </div>
+
+                    <p className="card-sub">ליווי חודשי שוטף לאוטומציה — כדי שהעסק שלך יעבוד חכם יותר, 24/7.</p>
+
+                    <ul className="package-features">
+                        <li>מיפוי תהליכים עסקיים (Process Mapping)</li>
+                        <li>אינטגרציות CRM / WhatsApp</li>
+                        <li>אופטימיזציה ושיפור מתמיד</li>
+                    </ul>
+
+                    <p className="cta">מתאים לעסקים שרוצים לייעל תהליכים, לחסוך זמן ולהגדיל המרות באמצעות AI</p>
+                </article>
+
+                {/* Card 5: DevOps Package */}
                 <article className="card">
                     <div className="card-top">
                         {sharedIcons.infinity}
