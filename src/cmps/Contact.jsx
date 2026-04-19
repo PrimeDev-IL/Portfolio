@@ -83,7 +83,7 @@ export function Contact() {
                     <div className="contact-buttons">
                         <div className="button-row">
                             <a
-                                href="https://calendly.com/lior-primedev/30min"
+                                href="https://calendar.app.google/fYmf6misuo1rq7X17"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="cta-button schedule"

@@ -22,7 +22,7 @@ export function Hero() {
                                 {heroSectionIcons.whatsappIcon}
                             </a>
                             <a
-                                href="https://calendly.com/lior-primedev/30min"
+                                href="https://calendar.app.google/fYmf6misuo1rq7X17"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="cta-button schedule"
